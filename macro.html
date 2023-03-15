@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="macro.css">
+    <title>Macro Calculator</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"data-aos="fade-in">
+            <img src="mask.png" width="69px">
+            <h1>
+                NUTRI7
+            </h1>
+        </div>
+        <div class="navbar"data-aos="fade-in">
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="#">DIET plan</a></li>
+                <li><a href="index.html"target="_top">calculator</a></li>
+                <li><a href="#"target="_top">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="macro">
+<div class="content1"data-aos="fade-right">
+ <h1>| Macro Calculator</h1>
+ <p>You can find in-depth explanations<br>
+    of our preferred macros for each goal<br>
+    below. And if you'd like to use the calculator<br>
+    to determine your targets for the macros of your choice</p>
+</div>
+<div class="cal"data-aos="fade-in">
+ <img src="macro.png" width="600px">
+<div class="container">
+ <h2>| Calculate Your Macro</h2>
+<div class="inputbox">
+<div class="text1">
+ <span>AGE</span>
+ <input type="number" placeholder="year" autofocus id="age">
+</div>
+<div class="text2">
+ <span>Weight</span>
+ <input type="number" placeholder="KG" id="weight">
+</div>
+<div class="text3">
+ <span>Height</span>
+ <input type="number" placeholder="Ft" id="height">
+</div>
+ <br><br><br>
+ <div class="text4">
+    <span>Gender</span>
+    <input type="radio" id="male" name="gender">
+    <label>MALE</label>
+    <input type="radio" id="female" name="gender">
+    <label>FEMALE</label>
+    </div>
+
+<div class="submit">
+ <br>
+ <input type="submit" value="Calculate" id="calculate">
+ <span></span>
+</div>
+</div>
+</div>
+</div>
+<!--macro content2nd-->
+<div class="content2"data-aos="fade-right">
+ <img src="food.jpg" width="50%">
+ <img src="gradient.jpg" width="60%" id="gradi">
+ <h1>| MACROS<br>
+     what are macros and<br>
+     why should we counting them.
+ </h1>
+ <p>Well, “macro” is short for<br>
+    micronutrient.What's a<br>
+    micronutrient? They're the<br>
+    three categories of nutrients<br>
+    you eat the most and provide<br>
+    you with most of your energy:<br>
+    protein,carbohydrates and fat.
+ </p>
+</div>
+<!--macro content3rd-->
+<div class="content3"data-aos="fade-left">
+<div class="box" >
+ <img src="content3.jpg" width="50%">
+ <img src="gradient.jpg" width="60%" id="gradie">
+</div>
+<div class="macross" >
+ <h1>|What AreTheMacros</h1>
+ 
+<div class="carbs">
+<div class="card">
+<div class="percent" style="--clr:#fbde5f;--num:55;">
+<div class="dot"></div>
+ <svg>
+ <circle cx="70" cy="70" r="70"></circle>
+ <circle cx="70" cy="70" r="70"></circle>
+ </svg>
+<div class="number">
+ <h2>55<Span>%</Span></h2>
+ <p id="1">carbs </p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="percent" style="--clr:hsl(49, 73%, 78%);--num:35;">
+<div class="dot"></div>
+ <svg>
+ <circle cx="70" cy="70" r="70"></circle>
+ <circle cx="70" cy="70" r="70"></circle>
+ </svg>
+<div class="number">
+ <h2>35<Span>%</Span></h2>
+ <p class="ft">Fat</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="percent" style="--clr:#ebfa86;--num:45;">
+<div class="dot"></div>
+ <svg>
+ <circle cx="70" cy="70" r="70"></circle>
+ <circle cx="70" cy="70" r="70"></circle>
+ </svg>
+<div class="number">
+ <h2>45<Span>%</Span></h2>
+ <p id="3">Protein</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--macro results-->
+<div class="output"data-aos="zoom-in">
+ <img src="gradient.jpg" width="100%">
+ <h1>| Here your Macro Result</h1>
+<div class="glass">
+<div class="carb">
+ <h2>| CARBS</h2>
+ <img src="carbs.png" >
+ <p id="carb-result"></p>
+</div>
+</div>
+<div class="glass">
+<div class="protein">
+ <h2>| protein</h2>
+ <img src="protein.png">
+ <p id="protien-result"></p>
+</div>
+</div>
+<div class="glass">
+<div class="fat">
+ <h2>| Fat</h2>
+ <img src="fat.png">
+ <p id="fat-result"></p>
+</div>
+</div>
+</div>
+</div>
+<!--footer-->
+<footer data-aos="fade-up">
+ <img src="ftr.jpg" width="100%">
+<div class="ftr">
+<div class="nutrii7">
+ <h1>| NUTRI7</h1>
+ <p>it helps design<br>
+    your lifestyle</p>
+<div class="social">
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+  <a href="#"><i class="fa-regular fa-envelope"></i></a>
+</div>
+</div>
+<div class="quicklink">
+ <h1>| Quicklink</h1>
+ <ul>
+  <li>> About us</li>
+  <li>> Classes</li>
+  <li>> Our history</li>
+  <li>> FAQ</li>
+ </ul>
+</div>
+<div class="ourservices">
+ <h1>| our services</h1>
+ <ul>
+  <li> > Personalized nutrition</li>
+  <li> > Balance Body & Mind</li>
+  <li> > Fitness performance</li>
+  <li> > Weight loss programme</li>
+ </ul>
+</div>
+<div class="contactus">
+ <h1>| contact us</h1>
+ <ul>
+  <li> the trplicane,chennai</li>
+  <li> 9678 46750</li>
+  <li> info@madboy.com</li>
+ </ul>
+</div>
+</div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="macro.js"></script>
+</body>
+</html>

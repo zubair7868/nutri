@@ -1,0 +1,454 @@
+@font-face {
+    font-family:lemon;
+    src: url(lemon.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    
+    background-color: rgb(0, 6, 14);
+    
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    background:url(gradient.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    position: relative;
+    right: -560px;
+    top: -80px;
+    display: flex;
+}
+.navbar ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-family: lemon;
+    font-size: 1rem;
+    color: black;
+    position: relative;
+}
+.navbar ul li a::after{
+     content: '';
+    position: absolute;
+    bottom: -5px;
+    left:0;
+    right: 100%;
+    height: 3px;
+    background-color: black; 
+  }
+  .navbar ul li a:hover::after{
+       left: 0;
+       right: 0;
+       transition:1s ;
+  }
+.logo{
+    width:fit-content;
+    height:fit-content;
+}
+.logo img{
+    position: relative;
+    right: -80px;
+}
+.logo h1{
+    position: relative;
+    top: -60px;
+    right: -180px;
+    font-family: lemon;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: rgb(45, 45, 45);
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   min-height: 100vh;  
+   
+   
+}
+.class{
+    position: relative;
+    bottom: -140px;
+}
+.class h1{
+    position: relative;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family:lemon;
+    text-align: left;
+    letter-spacing: 2px;
+    line-height: 1;  
+    right: 5em;
+}
+.class p{
+    position: relative;
+    left: -150px;
+    bottom: -60px;
+    color: rgba(255, 255, 255, 0.725);
+    font-size: 1.5rem;
+    font-family: lemon;
+    letter-spacing: 2px;
+    text-align:left;
+    line-height: 2;
+}
+.image{
+    position: relative;
+    left: 80px;
+    top: 100px;
+    opacity: 1;
+}
+.container{
+    position: relative;
+    bottom: 37em;
+    right: 6rem;
+    width: 60vw;
+    height: 80vh;
+    padding:50px;
+    background: rgba(200, 200, 200, 0.162);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid  rgba(255, 255, 255, 0.644);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(2px);
+}
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+    pointer-events:none;
+    transform: skewX(-15deg);
+}
+.container h2{
+    width: 100%;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 2rem;
+    font-family: lemon;
+    letter-spacing: 5px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+.container .col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 20px;
+}
+.container .cardss .col .inputbox{
+    position: relative;
+    right: -40px;
+    bottom: -40px;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-family: lemon;
+}
+.container .cardss .col .inputbox input,
+.container .cardss .col .inputbox input
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 10px;
+    z-index: 1;   
+}
+.container .cardss .col .inputbox .number{
+    position: absolute;
+    top: 0;
+    left: 10;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.container .cardss .col .inputbox input:focus + .number,
+.container .cardss .col .inputbox textarea:valid + .number
+{
+    top: -35px;
+    left: -15px;
+}  
+.container .cardss .col .inputbox .line
+{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 60%;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+.container .cardss .col .inputbox input:focus ~ .line,
+.container .cardss .col .inputbox number:valid ~ .line
+{
+    height:100% ;
+}
+.container .cardss .col input[type="submit"]
+{
+    margin:80px 17em;    
+    border:1px solid rgb(255, 255, 255);
+    padding: 10px 40px;
+    cursor: pointer;
+    color: rgb(247, 247, 247);
+    background-color: rgb(83, 83, 83);
+    font-size: 18px;
+    border-radius: 20px;
+}
+#output{
+    position: relative;
+    top: -20px;
+    right: -60px;
+    padding: 10px;
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(32, 32, 32);
+    opacity: 0.6;
+    font-size: 1.5rem;
+    font-family: lemon;
+    letter-spacing: 2px;
+}
+.content2{
+    width: 600px;
+    height: 80vh;
+  position: relative;
+  bottom: 100px;
+  left: 720px;
+}
+.content2 h1{
+    position: relative;
+    top: -1200px;
+    left: -600px;
+    font-family: lemon;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    line-height: 3;
+    color: aliceblue;
+}
+.content2 p{
+position: relative;
+top: -1180px;
+left: -600px;
+    font-family: lemon;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 2.5;
+    color: rgba(240, 248, 255, 0.719);
+}
+.content2 .gradi1{
+    position: relative;
+    top: -40px;
+    left: 70px;
+    height: 80vh;
+    width: 730px;
+    z-index: -1;
+}
+.content2 .gradi2{
+    position: relative;
+    top: -590px;
+    right: -99px;
+    width: 700px;
+    height: 80vh;
+}
+.content3{
+    width: 600px;
+    height: 80vh;
+ position: relative;
+}
+.content3 h1{
+    position: relative;
+    top: -1200px;
+    right: -800px;
+    font-family: lemon;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    line-height: 3;
+    color: aliceblue;
+}
+.content3 p{
+position: relative;
+top:-1200px;
+right: -800px;
+font-family: lemon;
+font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 2.5;
+    color: rgba(240, 248, 255, 0.719);
+}
+.content3 .gradi1{
+    position: relative;
+    top: -40px;
+    left: 0;
+    height: 80vh;
+    width: 730px;
+    z-index: -1;
+}
+.content3 .gradi2{
+    position: relative;
+    top: -590px;
+    right: 0;
+    width: 700px;
+    height: 80vh;
+}
+
+footer{
+    position: relative;
+    top: 200px;
+    overflow: hidden;
+    height: 440px;
+  
+    
+  
+  }
+  footer img{
+    height: 440px;
+  
+  }
+  footer h2{
+    position: absolute;
+    top:20px;
+    left: 650px;
+    font-size: 0.8rem;
+    font-family: lemon;
+    letter-spacing: 2px;
+    line-height: 2;
+    
+    
+  }
+  footer .ftr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    position: relative;
+    top: -40px;
+  }
+  .ftr .nutrii7{
+    position: relative;
+    top: -230px;
+    left: -120px;
+  }
+  .nutrii7 h1{
+    font-family: lemon;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    line-height: 3;
+  }
+  .nutrii7 p{
+    font-family: lemon;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-top: 20px;
+  }
+  .nutrii7 a{
+    font-size: 2rem;
+    color: black;
+     margin-right: 20px;
+     line-height: 3; 
+  }
+  .quicklink{
+    position: relative;
+    top: -230px;
+    left: -50px;
+  }
+  .quicklink h1{
+    font-family: lemon;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    line-height: 3;
+  }
+  .quicklink ul li{
+    font-family: lemon;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 2;
+    list-style-type: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .quicklink ul li:hover{
+    color: rgb(96, 134, 2);
+    transition-duration: 1s;
+  }
+  .ourservices{
+    position: relative;
+    top: -230px;
+    right: -40px;
+  }
+  .ourservices h1{
+    font-family: lemon;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    line-height: 3;
+  }
+  .ourservices ul li{
+    font-family: lemon;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 2;
+    list-style-type: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .ourservices ul li:hover{
+    color: rgb(96, 134, 2);
+    transition-duration: 1s;
+  }
+  .contactus{
+    position: relative;
+    top: -230px;
+    right: -120px;
+    width:280px;
+  
+  }
+  .contactus h1{
+    font-family: lemon;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    line-height: 3;
+  }
+  .contactus ul li{
+    
+    font-family: lemon;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 2;
+    list-style-type: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .copyri8{
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    height: 3px;
+    background-color:rgb(0, 0, 0);
+  }
+  
+  

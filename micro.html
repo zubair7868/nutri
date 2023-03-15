@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Micro Cal</title>
+ <link rel="stylesheet" href="micro.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="micro.js"></script>
+</head>
+<body>
+ <!--navigation bar-->
+ <nav>
+        <div class="logo"data-aos="fade-in">
+            <img src="mask.png" width="69px">
+            <h1>NUTRI7</h1>
+        </div>
+        <div class="navbar"data-aos="fade-in">
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="#">DIET plan</a></li>
+                <li><a href="macro.html"target="_top">calculator</a></li>
+                <li><a href="#"target="_top">About us</a></li>
+            </ul>
+        </div>
+        
+      
+ 
+ </nav>
+ <!--micro-calculator-->
+ <div class="micro" data-aos="fade-up">
+<div class="content1">
+<h1>| Micro Calculator</h1>
+<p>You can find in-depth explanations<br>
+      of our preferred macros for each goal<br>
+      below. And if you'd like to use the calculator<br>
+      to determine your targets for the macros of your choice</p>
+     </div>
+     <div class="banner-glass" data-aos="fade-up">
+      <img src="miccro.png" width="400px">
+     <div class="container">
+      <h2>| Calculate Your Micro</h2>
+     <div class="inputbox">
+     <div id="age" class="text1">
+      <span>AGE</span>
+     <input type="number" placeholder="year" autofocus id="age">
+     </div>
+     <div id="gender" class="text2">
+     <span>Gender</span>
+     <input type="radio" id="male" name="gender">
+     <label>MALE</label>
+     <input type="radio" id="female" name="gender">
+     <label>FEMALE</label>
+     </div>
+     <div class="submit">
+        <br>
+        <input type="submit" value="Calculate" id="calculate">
+        <span></span>
+       </div>
+     
+     </div>
+     </div>
+     </div>
+     </div>
+     <!--about-micro-nutrients-->
+    <div class="content2" data-aos="zoom-in">
+     <img class="gradi1" src="gradient.jpg">
+     <img class="gradi2" src="microcnt1.jpg" >
+     <h1>| About Micro Nutrients</h1>
+     <p>Vitamins are potent, indispensable compounds that perform<br>
+        various bodily functions promoting growth, reproduction and<br>
+        maintain health.<br>
+        Essentially vitamins make people’s bodies work properly.<br> 
+        Although we receive these nutrients from most of the foods<br>
+        we eat, some foods have more vitamins and minerals than others.<br>
+        Most of the time, the micronutrients will be consumed within the<br>
+        macros we eat, as they are important within the metabolism of the<br>
+        macronutrients to produce energy. 
+        </p>
+    </div>
+    <!--micro-nutrients-->
+    <div class="content3">
+        <img class="gradi3" src="gradient.jpg">
+        <img class="gradi4" src="microcnt2.jpg" >
+        <h1>| Micro Nutrients</h1>
+       <p>Micronutrients are vitamins and minerals needed<br>
+         by the body in very small amounts. However, their<br>
+         impact on a body's health are critical, and deficiency<br>
+         in any of them can cause severe and even life-threatening<br>
+         conditions.<br>
+         Micronutrients, often referred to as vitamins and minerals,<br>
+          are vital to healthy development, disease prevention, and<br>
+          wellbeing.With the exception of vitamin D, micronutrients<br>
+          are not produced in the body and must be derived from the diet1.
+
+
+        </p>
+    </div>
+    <!--micro-results-->
+    <div class="content4">
+     <img src="ftr.jpg">
+     <h1>| Here Your Micro Result.</h1>
+     <div class="minerals">
+     <h6>| Minerals</h6>                
+     <div class="mineral-micro">
+     <div class="card">
+     <div class="percent" style="--clr:#fbde5f;--num:25;">
+     <div class="dot"></div>
+     <svg>
+     <circle cx="70" cy="70" r="70"></circle>
+     <circle cx="70" cy="70" r="70"></circle>
+     </svg>
+     <div class="number">
+     <h2 id="iron"></h2>
+     <p id="ironn">iron</p>
+     </div>
+     </div>
+     </div>
+     <div class="card">
+     <div class="percent" style="--clr:hsl(49, 73%, 78%);--num:35;">
+     <div class="dot"></div>
+     <svg>
+     <circle cx="70" cy="70" r="70"></circle>
+     <circle cx="70" cy="70" r="70"></circle>
+     </svg>
+     <div class="number">
+        <h2 id="zinc"><Span>mg</Span></h2>
+        <p class="ft">zinc</p>
+       </div>
+      </div>
+     </div>
+               <div class="card">
+               <div class="percent" style="--clr:hsl(49, 73%, 78%);--num:35;">
+               <div class="dot"></div>
+                <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+               <div class="number">
+                <h2 id="calcium"><Span>mg</Span></h2>
+                <p class="ft">calcium</p>
+               </div>
+               </div>
+      </div>
+               <div class="card">
+                <div class="percent" style="--clr:hsl(49, 73%, 78%);--num:35;">
+                <div class="dot"></div>
+                 <svg>
+                 <circle cx="70" cy="70" r="70"></circle>
+                 <circle cx="70" cy="70" r="70"></circle>
+                 </svg>
+                <div class="number">
+                 <h2 id="magnesium"><Span>mg</Span></h2>
+                 <p class="ft">magnesium</p>
+                </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="percent" style="--clr:hsl(49, 73%, 78%);--num:35;">
+                    <div class="dot"></div>
+                     <svg>
+                     <circle cx="70" cy="70" r="70"></circle>
+                     <circle cx="70" cy="70" r="70"></circle>
+                     </svg>
+                    <div class="number">
+                     <h2 id="potassium">35<Span>mg</Span></h2>
+                     <p class="ft">potassium</p>
+                    </div>
+                    </div>
+                    </div>
+               <div class="card">
+               <div class="percent" style="--clr:#ebfa86;--num:45;">
+               <div class="dot"></div>
+                <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+               <div class="number">
+                <h2 id="selenium"><Span>mg</Span></h2>
+                <p id="3">selenium</p>
+               </div>
+               </div>
+               </div>
+               <div class="card">
+                <div class="percent" style="--clr:hsl(49, 73%, 78%);--num:35;">
+                <div class="dot"></div>
+                 <svg>
+                 <circle cx="70" cy="70" r="70"></circle>
+                 <circle cx="70" cy="70" r="70"></circle>
+                 </svg>
+                <div class="number">
+                 <h2 id="copper"><Span>mg</Span></h2>
+                 <p class="ft">copper</p>
+                </div>
+               </div>
+               </div>
+               </div>
+               </div>
+        </div>
+    </div>
+    <!--micro-results-->
+    <div class="content5">
+        <img src="ftr.jpg" width="100%">
+        <h6>| VITAMINS</h6>
+        <div class="vitamins" >
+           <div class="vita">
+           <div class="card">
+           <div class="percent" style="--clr:#fbde5f;--num:23;">
+           <div class="dot"></div>
+            <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+           <div class="number">
+            <h2 id="vit-a"><Span>mg</Span></h2>
+            <p id="1">Vitamin A</p>
+           </div>
+           </div>
+           </div>
+           <div class="card">
+           <div class="percent" style="--clr:hsl(49, 73%, 78%);--num:35;">
+           <div class="dot"></div>
+            <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+           <div class="number">
+            <h2 id="vit-b6"><Span>mg</Span></h2>
+            <p class="ft">Vitamin B6</p>
+           </div>
+           </div>
+           </div>
+           <div class="card">
+           <div class="percent" style="--clr:#ebfa86;--num:45;">
+           <div class="dot"></div>
+            <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+           <div class="number">
+            <h2 id="vit-b12"><Span>mg</Span></h2>
+            <p id="3">Vitamin B12</p>
+           </div>
+           </div>
+           </div>
+           <div class="card">
+            <div class="percent" style="--clr:#ebfa86;--num:45;">
+            <div class="dot"></div>
+             <svg>
+             <circle cx="70" cy="70" r="70"></circle>
+             <circle cx="70" cy="70" r="70"></circle>
+             </svg>
+            <div class="number">
+             <h2 id="vit-c"><Span>mg</Span></h2>
+             <p id="3">Vitamin C</p>
+            </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="percent" style="--clr:#ebfa86;--num:45;">
+                <div class="dot"></div>
+                 <svg>
+                 <circle cx="70" cy="70" r="70"></circle>
+                 <circle cx="70" cy="70" r="70"></circle>
+                 </svg>
+                <div class="number">
+                 <h2 id="vit-d"><Span>mg</Span></h2>
+                 <p id="3">Vitamin D</p>
+                </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="percent" style="--clr:#ebfa86;--num:45;">
+                    <div class="dot"></div>
+                     <svg>
+                     <circle cx="70" cy="70" r="70"></circle>
+                     <circle cx="70" cy="70" r="70"></circle>
+                     </svg>
+                    <div class="number">
+                     <h2 id="vit-e"><Span>mg</Span></h2>
+                     <p id="3">Vitamin E</p>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <div class="percent" style="--clr:#ebfa86;--num:45;">
+                        <div class="dot"></div>
+                         <svg>
+                         <circle cx="70" cy="70" r="70"></circle>
+                         <circle cx="70" cy="70" r="70"></circle>
+                         </svg>
+                        <div class="number">
+                         <h2 id="vit-k"><Span>mg</Span></h2>
+                         <p id="3">Vitamin K</p>
+                        </div>
+                        </div>
+                        </div>
+           </div>
+           <div class="vita2">
+            <div class="card">
+                <div class="percent" style="--clr:#ebfa86;--num:45;">
+                <div class="dot"></div>
+                 <svg>
+                 <circle cx="70" cy="70" r="70"></circle>
+                 <circle cx="70" cy="70" r="70"></circle>
+                 </svg>
+                <div class="number">
+                 <h2 id="ribo">45<Span>mg</Span></h2>
+                 <p id="3">Riboflavin</p>
+                </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="percent" style="--clr:#ebfa86;--num:45;">
+                    <div class="dot"></div>
+                     <svg>
+                     <circle cx="70" cy="70" r="70"></circle>
+                     <circle cx="70" cy="70" r="70"></circle>
+                     </svg>
+                    <div class="number">
+                     <h2 id="niacin">45<Span>mg</Span></h2>
+                     <p id="3">Niacin</p>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <div class="percent" style="--clr:#ebfa86;--num:45;">
+                        <div class="dot"></div>
+                         <svg>
+                         <circle cx="70" cy="70" r="70"></circle>
+                         <circle cx="70" cy="70" r="70"></circle>
+                         </svg>
+                        <div class="number">
+                         <h2 id="thiamine">45<Span>mg</Span></h2>
+                         <p id="3">Thiamine</p>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="card">
+                            <div class="percent" style="--clr:#ebfa86;--num:45;">
+                            <div class="dot"></div>
+                             <svg>
+                             <circle cx="70" cy="70" r="70"></circle>
+                             <circle cx="70" cy="70" r="70"></circle>
+                             </svg>
+                            <div class="number">
+                             <h2 id="choline">45<Span>mg</Span></h2>
+                             <p id="3">choline</p>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="card">
+                                <div class="percent" style="--clr:#ebfa86;--num:45;">
+                                <div class="dot"></div>
+                                 <svg>
+                                 <circle cx="70" cy="70" r="70"></circle>
+                                 <circle cx="70" cy="70" r="70"></circle>
+                                 </svg>
+                                <div class="number">
+                                 <h2 id="folate">45<Span>mg</Span></h2>
+                             <p id="3">folate</p>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="card">
+                                    <div class="percent" style="--clr:#ebfa86;--num:45;">
+                                    <div class="dot"></div>
+                                     <svg>
+                                     <circle cx="70" cy="70" r="70"></circle>
+                                     <circle cx="70" cy="70" r="70"></circle>
+                                     </svg>
+                                    <div class="number">
+                                     <h2 id="omg-3"><Span>mg</Span></h2>
+                                     <p id="3">omega-3</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="percent" style="--clr:#ebfa86;--num:45;">
+                                        <div class="dot"></div>
+                                         <svg>
+                                         <circle cx="70" cy="70" r="70"></circle>
+                                         <circle cx="70" cy="70" r="70"></circle>
+                                         </svg>
+                                        <div class="number">
+                                         <h2 id="vit-e">45<Span>mg</Span></h2>
+                                         <p id="3">Vitamin E</p>
+  </div>
+  </div>
+ </div>
+            
+           </div>
+           </div>
+    </div>
+    <!--about nutrients food-->
+    <div class="content6">
+        <h1>| Here Are The Micro Nutrients Food.</h1>
+        <div class="vit-a">
+            <img class="vit-a-grad1" src="gradient.jpg">
+            <img id="vit-a2" src="vit-aa.jpg" width="100%">
+            <h6>| Vitamin A Rich Food</h6>
+            <img class="carrot" src="vit-a.png" >
+            <p>Vitamin A is needed for eye health, vision,<br>
+               immune function, cell growth, reproduction,<br>
+               and fetal development</p>
+            <ul>
+                <li>Carrots</li>
+                <li>Sweet Potato</li>
+                <li>Broccoli</li>
+                <li>Spinach</li>
+                <li>Cod-liver</li>
+            </ul>
+        </div>
+        <div class="vit-b6">
+            <img class="vit-b" src="gradient.jpg">
+            <img class="berri" src="vit-b6.jpg">
+            <h6>| Vitamin B6 Rich Food</h6>
+            <img  class="fish" src="vit-b6.png" width="100px">
+            <p>Vitamin B-6 (pyridoxine) is important<br>
+               for normal brain development and for<br>
+               keeping the nervous system and immune<br>
+               system healthy.Food sources of vitamin B-6<br>
+               include poultry,fish, potatoes</p>
+               <ul>
+                <li> fish </li>
+                <li>beef</li>
+                <li>liver</li>
+                <li>citrus food</li>
+                <li>fruits</li>
+               </ul>
+        </div>
+        <div class="vit-b12">
+            <img class="vit-bb" src="gradient.jpg">
+            <img class="beef" src="vit-b12.jpg">
+            <h6>| Vitamin B12 Rich Food</h6>
+            <img  class="steak" src="vit-b12.png" width="100px">
+            <p>Vitamin B12 is a nutrient that helps keep your<br>
+               body's blood and nerve cells healthy and helps<br>
+               make DNA, the genetic material in all of your<br>
+               cells.Vitamin B12 also helps prevent megaloblastic<br>
+               anemia,a blood condition that makes people tired and weak</p>
+               <ul>
+                <li>oyesters </li>
+                <li>beef</li>
+                <li>sardines</li>
+                <li>Dairy product</li>
+                <li>liver</li>
+               </ul>
+        </div>
+        <div class="vit-c">
+            <img class="vita-c" src="gradient.jpg">
+            <img class="lemon" src="vit-ccc.jpg">
+            <h6>| Vitamin C Rich Food</h6>
+            <img  class="bellpepper" src="VIT-C.png" width="50px">
+            <p>which in excess can damage cells.<br>
+              Vitamin C is also involved in the body’s<br>
+              immune system by stimulating the activity of<br>
+              white blood cells.</p>
+               <ul>
+                <li> Citrus fruits </li>
+                <li>bell peppers</li>
+                <li>strawberries</li>
+                <li>white potatoes</li>
+                <li>cruciferous veg</li>
+               </ul>
+        </div>
+        <div class="vit-d">
+            <img class="vit-dd" src="gradient.jpg">
+            <img class="sun" src="vit-d.jpg">
+            <h6>| Vitamin D Rich Food</h6>
+            <img  class="egg" src="vit-d.png" width="100px">
+            <p>Vitamin D helps regulate the amount of calcium<br>
+              and phosphate in the body. These nutrients are<br>
+              needed to keep bones, teeth and muscles healthy.<br></p>
+               <ul>
+                <li>liver</li>
+                <li>egg yolks</li>
+                <li>red meat</li>
+                <li>oily fish</li>
+                <li>fortified foods</li>
+               </ul>
+        </div>
+        </div>
+
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+</body>
+</html>

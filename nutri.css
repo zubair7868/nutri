@@ -1,0 +1,1507 @@
+@font-face {
+    font-family: lemon;
+    src: url(lemon.otf);
+  }
+  @font-face {
+    font-family: blackpast;
+    src: url(./blackpast/Blackpast\ DEMO.ttf);
+  }
+  html{
+    scroll-behavior: smooth;  
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background-color: rgb(0, 12, 19);
+    height: 7200px;
+    
+  }
+  .animate{
+    width: 100px;
+    height: 100px;
+}
+#pre-loader{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  animation: fill 0.5s ease forwards 4s;
+
+}
+#pre-loader path:nth-child(1){
+  stroke-dasharray: 604;
+  stroke-dashoffset: 604;
+  animation: animae 3s ease forwards;
+
+}
+#pre-loader path:nth-child(2){
+  stroke-dasharray: 572;
+  stroke-dashoffset: 572;
+  animation: animae 3s ease forwards 0.6s;
+
+}
+#pre-loader path:nth-child(3){
+  stroke-dasharray: 227;
+  stroke-dashoffset: 227;
+  animation: animae 3s ease forwards 0.7s;
+ 
+}
+#pre-loader path:nth-child(4){
+  stroke-dasharray: 463;
+  stroke-dashoffset: 463;
+  animation: animae 3s ease forwards 1.2s;
+
+}
+#pre-loader path:nth-child(5){
+  stroke-dasharray: 635;
+  stroke-dashoffset: 635;
+  animation: animae 3s ease forwards 1.5s;
+
+}
+#pre-loader path:nth-child(6){
+  stroke-dasharray: 550;
+  stroke-dashoffset: 550;
+  animation: animae 3s ease forwards 1.8s;
+  
+}
+@keyframes animae{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill{
+  from{
+    fill: transparent;
+  }
+  to{
+    fill:black;
+  }
+}
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(gradient.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all;
+    transition-duration: 2s;  
+}
+.change
+{
+display:none;
+
+}
+  .banner{
+    background-image: url(./gradient.jpg);
+    width: 100%;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    overflow: hidden;
+    animation: opacity 2s  ;
+    animation-delay: 5s;
+  }
+  @keyframes opacity{
+    from{
+      opacity:0;
+    }
+    to{
+      opacity: 100%;
+    }
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+  }
+  .logo{
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  .logoo{
+    font-family: lemon;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    margin-top: 20px;
+  
+ 
+  }
+  .logoo span{
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+  }
+   nav{
+    text-align: center;
+    margin-right: 25em;
+ }
+   nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 20px;
+ }
+   nav ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: lemon;
+    color: rgb(87, 87, 87);
+    letter-spacing: 2px;
+    position: relative;
+ }
+   nav ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left:0;
+    right: 100%;
+    height: 3px;
+    background-color: black;
+}
+   nav ul li a:hover::after{
+    left: 0;
+    right: 0;
+    transition:1s ;
+}
+  .content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 50px ;
+    width: 90%;
+    margin: auto;
+ }
+  .social{
+    width:10%;
+    height: fit-content;
+    flex-direction: column;
+ }
+ .social a{
+  margin-right:100px;
+  color: grey;
+  flex-direction: row;
+  line-height: 2;
+  font-size: 2rem;
+
+ }
+ .social a:hover{
+  color: black;
+ }
+ .cont1{
+  margin-right: 50px;
+  width: 50%;
+ }
+ .cont1 h6{
+  margin-left: 100px;
+  font-size: 2rem;
+  font-family: lemon;
+  letter-spacing: 3px;
+  line-height: 2;
+ 
+ }
+ .cont1 h6 span{
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  
+ }
+ .cont1 .btn{
+  margin-left: 10px;
+ }
+ .cont1 button{
+  margin-top: 50px;
+  margin-left: 100px;
+  padding: 15px 35px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 204, 38, 0.771);
+  
+}
+.cont1 button:hover{
+  background-color: rgba(4, 4, 4, 0.944);
+  border: 2px solid black;
+  color: white;
+}
+.cont1 a{
+  font: 1rem lemon;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+.cont1 a:hover{
+  color: white;
+  }
+.bnr{
+   width: 30%;
+
+}
+.bnr img{
+margin-left: 250px;
+margin-top: -50px;
+}
+.bnr img::after{
+  display: inline-block;
+  transform: perspective(30px) rotate3d(1,13,1,70deg);
+  animation: anis 1000ms rotate 1 forwards;
+ 
+
+}
+@keyframes anis{
+  0%{
+    transform: perspective(0px) rotate3d(1,13,1,70deg);
+}
+  100%{
+    transform: perspective(0px) rotate3d(0,0,0,70deg);
+}
+}
+.card{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  width: 45%;
+  height: 75vh;
+  
+}
+.card img{
+  width:100%;
+  height: 75vh;
+  opacity: 0.5;
+  
+}
+.text1{
+position: relative;
+top: 100px;
+right: -100px;
+
+
+}
+.card .text1 p{
+  position: absolute;
+  right: -600px;
+  color: white;
+  font-family: lemon;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+.card .text1 button{
+  position: absolute;
+  top: 180px;
+  border: 1px solid white;
+  padding: 15px 25px;
+  border-radius: 20px;
+  font-family: lemon;
+  font-size: 1rem;
+  
+}
+.cardss{
+  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.cardss .glass {
+  position: relative;
+  top: -180px;
+  width: 350px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0,0, 0.5);
+  border-radius: 5px;
+  background: rgba(255, 255, 255,0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255,0.5);
+  border-left: 1px solid rgba(255, 255, 255,0.4);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+.cardss .glass .macro{
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+  
+}
+.cardss .glass .macro p{
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  font-size: 1.5rem;
+  pointer-events: none;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: white;
+  font-family: lemon;
+  z-index: 1;
+}
+.macro a{
+  position: relative;
+  top: 60px;
+  padding: 10px 20px;
+  background:transparent;
+  color: rgb(237, 237, 237);
+  text-decoration: none;
+  border-radius: 20px;
+  border: 2px solid white;
+  font-family: lemon;
+  
+}
+.macro a:hover{
+  background-color: rgb(90, 89, 89);
+  
+}
+.macro img{
+  position: relative;
+  top: 30px;
+}
+.macro img:hover{
+  transform: scale(2);
+  
+}
+.cardss .glass .water{
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+  
+}
+.cardss .glass .water p{
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  font-size: 1.5rem;
+  pointer-events: none;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: white;
+  font-family: lemon;
+  z-index: 1;
+
+}
+.water a{
+  position: relative;
+  top: 60px;
+  padding: 10px 20px;
+  background:transparent;
+  color: rgb(238, 238, 238);
+  text-decoration: none;
+  border-radius: 20px;
+  border: 2px solid rgb(212, 212, 212);
+  font-family: lemon;
+  
+}
+.water a:hover{
+  background-color: rgb(90, 89, 89);
+  
+}
+.water img{
+  position: relative;
+  top: 30px;
+}
+.water img:hover{
+  transform: scale(2);
+  
+}
+.cardss .glass .micro{
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+  
+}
+.cardss .glass .micro p{
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  font-size: 1.5rem;
+  pointer-events: none;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: white;
+  font-family: lemon;
+  z-index: 1;
+
+}
+.micro a{
+  position: relative;
+  top: 60px;
+  right: 80px;
+  padding: 10px 20px;
+  background:transparent;
+  color: rgb(238, 238, 238);
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid rgb(212, 212, 212);
+  font-family: lemon;
+ 
+}
+.micro a:hover{
+  background-color: rgb(90, 89, 89);
+  
+}
+.micro img{
+  position: relative;
+  top: 30px;
+  right: -40px;
+}
+.micro img:hover{
+  transform: scale(1.5);
+  
+}
+.services{
+  position: relative;
+  top: -510px;
+  right: -20px;
+  background-color: black;
+ height: 70vh;
+ width: 100vw;
+
+  
+}
+.services .ser-1{
+  position: relative;
+  right: 0px;
+
+}
+.services img{
+ float: right;
+   opacity: 0.5;
+
+}
+.about{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  top: -650px;
+  right: -100px;  
+}
+.about img{
+  height:auto;
+  position: relative;
+  width: 50vw;  
+}
+.about h1{
+  position: absolute;
+  left: 100px;
+  top: 60px;
+  font-family: lemon;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+.aboutglass{
+  position: relative;
+  bottom: -560px;
+  left: -580px;
+  z-index: 1;
+}
+.aboutnutri{
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  height:80vh;
+  margin-right: -400px;
+  margin-top: -550px;
+  box-shadow: 20px 20px 50px rgba(89, 89, 89, 0.282);
+  border-radius: 5px;
+  background: rgba(31, 31, 31, 0.384);
+  overflow: hidden;
+  align-items: center;
+  border-top: 1px solid rgba(223, 223, 223, 0.5);
+  border-left: 1px solid rgba(104, 104, 104, 0.4);
+  border-right: 1px solid rgba(223, 223, 223, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+.aboutnutri h2{
+  position: relative;
+  right: -50px;
+  top: -50px;
+  font-family: lemon;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  text-align: left;
+  margin-top: -300px;
+  margin-right: -200px;
+  color: rgba(255, 255, 255, 0.804);
+  
+}
+.aboutnutri p{
+  position: relative;
+  bottom: -60px;
+  left: -160px;
+  font-family: lemon;
+  font-size: 1.2rem;
+  color: white;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 2;
+  
+}
+.blackglass img{
+  width: 250px;
+}
+.diet{
+  position: relative;
+  top: -60px;
+
+}
+.diet h6{
+  position: absolute;
+  left: 1000px;
+  top: 40px;
+  font: 2.5rem lemon;
+  color: white;
+  letter-spacing: 2px;
+  
+}
+.diet .img1{
+  width: 57%;
+  height: 75vh;
+}
+.diet .img2{
+  position: relative;
+  top: -510px;
+}
+.content2{
+  display: flex;
+  justify-content: space-around;
+  width: 900px;
+  height:70vh;
+  overflow: hidden;
+  position: relative;
+  left: 500px;
+  top: -800px;
+  box-shadow: 20px 20px 50px rgba(145, 145, 145, 0.129);
+  border-radius: 5px;
+  background: rgba(31, 31, 31, 0.384);
+  align-items: center;
+  border-top: 1px solid rgba(145, 145, 145, 0.5);
+  border-left: 1px solid rgba(104, 104, 104, 0.4);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+.content2 h1{
+  position: absolute;
+  bottom: 370px;
+  left: 90px;
+  font-family: lemon;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: white;
+}
+.macross{
+    order: 1;
+}
+.carbs{
+    position: relative;
+    right: -20px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.carbs .progress{
+    position: relative;
+    top: -20px;
+    width: 200px;
+    height: 150px;
+  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.carbs .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+   
+   
+}
+.percent #skills {
+  position:relative;
+  top: 20px;
+
+  text-align: center;
+  color: white;
+  font-family: lemon;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+.carbs .percent svg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: rotate(270deg);
+    
+}
+.carbs .percent svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width:3;
+    stroke: #191919;
+    transform: translate(5px,5px);
+    transition-delay: 2s;
+    
+}
+.carbs .percent svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+    
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.dot{
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    transform:rotate(calc(3.6deg * var(--num))) ;
+    /*360deg/ 100 = 3.6 */
+    animation: animateDot 2s linear forwards;
+}
+@keyframes animateDot{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(calc(3.6deg * var(--num)));   
+}
+}
+.dot::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+    0 0 30px var(--clr);
+}
+.skillrate{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.skillrate h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    font-size: 2rem;
+    font-family: lemon;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.skillrate h2 span{
+    font-weight: 300;
+    color: white;
+    font-size: 1rem;
+}
+.offers h2{
+  position: relative;
+  top: -680px;
+  right: -140px;
+  font: 2.5rem lemon;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+}
+.content3{
+position: relative;
+right: 10px;
+}
+
+.content3 .offer1{
+  position: absolute;
+  bottom: 807px;
+  left: 589px;
+  height: 82vh;
+  width: 62%;
+}
+.content3 .offer2{
+  position: relative;
+  top: -750px;
+  right: -619px;
+}
+.offercard{
+  position: relative;
+  top: -800px;
+  display: flex;
+  justify-content:center;
+}
+.activity{
+  position: relative;
+  top: -180px;
+  width: 350px;
+  height: 450px;
+  margin: 20px;
+  box-shadow: 20px 20px 50px rgba(54, 54, 54, 0.649);
+  border-radius: 5px;
+  background: rgba(31, 31, 31, 0.384);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255,0.5);
+  border-left: 1px solid rgba(255, 255, 255,0.4);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+.activity  .fitness{
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.offercard .activity  .fitness p{
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  font-size: 1.5rem;
+  pointer-events: none;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: white;
+  font-family: lemon;
+  z-index: 1;
+}
+.fitness a{
+  position: relative;
+  top: 60px;
+  padding: 10px 20px;
+  background:transparent;
+  color: rgb(237, 237, 237);
+  text-decoration: none;
+  border-radius: 20px;
+  border: 2px solid white;
+  font-family: lemon; 
+}
+.fitness a:hover{
+  background-color: rgb(90, 89, 89);
+}
+.fitness img{
+  position: relative;
+  top: 30px;
+}
+.fitness img:hover{
+  transform: scale(2);
+}
+.offercard .activity .plan{
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.offercard .activity .plan p{
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  font-size: 1.5rem;
+  pointer-events: none;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: white;
+  font-family: lemon;
+  z-index: 1;
+}
+.plan a{
+  position: relative;
+  top: 60px;
+  padding: 10px 20px;
+  background:transparent;
+  color: rgb(238, 238, 238);
+  text-decoration: none;
+  border-radius: 20px;
+  border: 2px solid rgb(212, 212, 212);
+  font-family: lemon;
+}
+.plan a:hover{
+  background-color: rgb(90, 89, 89);
+}
+.plan img{
+  position: relative;
+  top: 30px;
+}
+.plan img:hover{
+  transform: scale(2);
+}
+.offercard .activity .meal{
+ padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.offercard .activity .meal p{
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  font-size: 1.5rem;
+  pointer-events: none;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: white;
+  font-family: lemon;
+  z-index: 1;
+}
+.meal a{
+  position: relative;
+  top: 80px;
+  right: 80px;
+  padding: 10px 20px;
+  background:transparent;
+  color: rgb(238, 238, 238);
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid rgb(212, 212, 212);
+  font-family: lemon;
+}
+.meal a:hover{
+  background-color: rgb(90, 89, 89);
+}
+.meal img{
+  position: relative;
+  top: 20px;
+  right: -60px;
+}
+.meal img:hover{
+  transform: scale(1.5);
+}
+.content4{
+  display: flex;
+  position: relative;
+  top: -840px;
+}
+.content4 img{
+  height: 90vh;
+  width: 78%;
+}
+.content4 h6{
+  position:absolute;
+  bottom: 500px;
+  left: 120px;
+  font-family: lemon;
+  font-size: 1rem;
+  text-align: left;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: rgb(61, 61, 61);
+}
+.content4 h1{
+  position:absolute;
+  bottom: 340px;
+  left: 120px;
+  font-family: lemon;
+  font-size: 2rem;
+  text-align: left;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: black;
+}
+.content4 p{
+  position:absolute;
+  bottom: 120px;
+  left: 120px;
+  font-family: lemon;
+  font-size: 1.5rem;
+  text-align: left;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: black;
+}
+.cntnri8 .brkfst1{
+  position: relative;
+  top:-1300px;
+  right: -820px;
+  width: 19%;
+}
+.cntnri8 .brkfst2{
+  width:15%;
+  position: relative;
+  top: -1300px;
+  right: -900px;
+  opacity: 0.5;
+}
+.content5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: -1200px;
+}
+.content5 #g{
+  position: relative;
+  top: 40px;
+  right: -327px;
+  width: 57%;
+  height: 80vh;
+  z-index: -1;
+  overflow: hidden;
+  
+}
+.content5 #m{
+  position: relative;
+  top: -500px;
+  right: -342px;
+  width: 55%;
+  height: 80vh;
+}
+.content5 h1{
+  position: absolute;
+  top: 60px;
+  left: 250px;
+ font: 2.5rem lemon;
+ font-weight: 600;
+ color: white;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+.glasses{
+  position: absolute;
+  display: flex;
+}
+.glass5{
+  position: relative;
+  top: 40px;
+  width: 320px;
+  height: 400px;
+  margin: 20px;
+  box-shadow: 20px 20px 50px rgba(96, 96, 96, 0.255);
+  border-radius: 20px;
+  background:rgba(84, 84, 84, 0.284);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(218, 218, 218, 0.5);
+  border-left: 1px solid rgba(59, 59, 59, 0.079);
+  border-bottom:1px solid rgba(255, 255, 255, 0.127);
+  border-right: 1px solid rgba(218, 218, 218, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+.keto-diet p{
+  position: relative;
+  top: -30px;
+  left: 60px;
+  font-family: lemon;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color:aliceblue;
+}
+.keto-diet img{
+  position: relative;
+  top: -30px;
+  left: 60px;
+width: 180px;
+height: 30vh;
+}
+.keto-diet a{
+    position: relative;
+    top: 20px;
+    right: 100px;
+    padding: 10px 40px;
+    background:transparent;
+    color: rgb(238, 238, 238);
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid rgb(212, 212, 212);
+    font-family: lemon;
+  }
+  .keto-diet a:hover{
+    background-color: rgb(90, 89, 89);
+  }
+.paleo-diet img{
+  position: relative;
+  top: -20px;
+  left: 60px;
+width: 200px;
+height: 30vh;
+}
+.paleo-diet p{
+  position: relative;
+  top: -20px;
+  left: 70px;
+  font-family: lemon;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: aliceblue;
+}
+.paleo-diet a{
+  position: relative;
+  top: 10px;
+  right: -100px;
+  padding: 10px 40px;
+  background:transparent;
+  color: rgb(238, 238, 238);
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid rgb(212, 212, 212);
+  font-family: lemon;
+}
+.paleo-diet a:hover{
+  background-color: rgb(90, 89, 89);
+}
+.mediterran-diet img{
+  position: relative;
+  top: -20px;
+  left: 40px;
+width: 180px;
+height: 30vh;
+}
+.mediterran-diet p{
+  position: relative;
+  bottom: 30px;
+  left: 20px;
+  font-family: lemon;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: white;
+
+}
+.mediterran-diet a{
+  position: relative;
+  top: 20px;
+  right: 100px;
+  padding: 10px 40px;
+  background:transparent;
+  color: rgb(238, 238, 238);
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid rgb(212, 212, 212);
+  font-family: lemon;
+}
+.mediterran-diet a:hover{
+  background-color: rgb(90, 89, 89);
+}
+.vegan-diet p{
+  position: relative;
+  top: -40px;
+  left: 60px;
+  
+  color: white;
+  font: 1.8rem lemon;
+  width: fit-content;
+  
+
+}
+.vegan-diet img{
+  position: relative;
+  top: -20px;
+  right: -40px;
+  width: 180px;
+
+}
+.vegan-diet a{
+  position: relative;
+  top: 35px;
+  right: 100px;
+  padding: 10px 40px;
+  background:transparent;
+  color: rgb(238, 238, 238);
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid rgb(212, 212, 212);
+  font-family: lemon;
+}
+.vegan-diet a:hover{
+  background-color: rgb(90, 89, 89);
+}
+
+.partner{
+  position: relative;
+  top:-1400px;
+  overflow: hidden;
+
+}
+.partner img{
+  width: 100%;
+  height: 30vh;
+  
+}
+.partner h2{
+  color: white;
+  font-family: lemon;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 5;
+}
+@keyframes partn{
+  0%{
+    transform: translateX(0) ;
+}
+100%{
+  transform: translateX(calc(-150px * 7));
+}
+}
+.prtnr {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: -180px;
+  opacity: 0.8;
+  animation: partn 40s linear infinite;
+  width: calc(150px * 14);
+  overflow: hidden;
+}
+.prtnr img{
+  overflow: hidden;
+  width: 90px;
+  height: 15vh;
+}
+a,button{
+  cursor: pointer;
+  font: 0.8rem lemon;
+}
+@keyframes pan{
+  100%{background-position: 100% 50%;}
+}
+.login-bdy{
+  position: relative;
+  top: -1300px;
+  display: grid;
+  place-items: center;
+  height: 90vh;
+  background-image: url("login.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: cover;
+  animation: pan 6s infinite alternate ;
+  -webkit-animation: pan 6s infinite alternate ;
+}
+.login-bdy h2{
+  position: relative;
+  top: -140px;
+  color: white;
+  font-family: lemon;
+  font-size: 2rem;
+  text-align: center;
+}
+.form{
+  position: relative;
+  top: -40px;
+  display: flex;
+  background-color: black;
+}
+.form h2{
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  font-size: 1.5rem;
+}
+.form p{
+  position: absolute;
+  top: 130px;
+  left: 80px;
+  color: white;
+  font: 1.2rem lemon;
+  letter-spacing: 2px;
+  line-height: 2.5;
+  opacity: 0.8;
+  
+
+}
+.form img{
+  width: 700px;
+  height: 500px;
+  opacity: 0.2;
+}
+@media(width >= 500px) {
+  body{
+      padding: 0;
+  }
+
+}
+.login{
+  width:40%;
+  padding: 70px 30px 44px;
+  border-radius: #ffffff;
+  
+  border-radius: 5px;
+  text-align: center;
+ 
+}
+@media(width >=500px){
+  .login{
+      margin: 0;
+      width: 400px;
+  }
+}
+
+.login > h3{
+  margin: 0 0 30px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  font-family: lemon;
+  color: #f9f9f9;
+}
+.login > h4{
+  margin: 0 0 30px;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: lemon;
+  color: #f9f9f9;
+}
+.login-form{
+  width: 100%;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+.login-form > a{
+  color:#889d00;
+font-family: lemon;
+font-size: 0.67rem;
+text-align: left;
+}
+.login-form > input,
+.login-form > button {
+  width: 90%;
+  height: 50px;
+  padding: 0 16px;
+  border-radius: 8px;
+}
+.login-form > input {
+  border: 2px solid #ebebeb;
+  width: 9
+  
+  0%;
+}    
+.login-form > button {
+  width: 100%;
+  height: 56px;
+  border: 0;
+  background: #889d00;
+  color: #f9f9f9;
+  font-weight: 600;
+}
+.login-form > button:hover{
+  background-color: #4a6f01;
+}
+.testimonial{
+position: relative;
+bottom: 1200px;
+left: 620px;
+width: fit-content;
+}
+.testimonial h2{
+  width: fit-content;
+  color: white;
+  font-family: lemon;
+  font-size: 2rem;
+  line-height: 2;
+}
+.testimonial img{
+  position: absolute;
+  top:  120px;
+  left: -180px;
+  border-radius: 20px;
+
+}
+.testimonial q{
+  position:absolute;
+  top: 160px;
+left:  -100px;
+width:400px;
+  font-family: lemon;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.testimonial p{
+  position:absolute;
+  top: 280px;
+left:  260px;
+width: 100px;
+  font-family: lemon;
+  font-weight: 600;
+  line-height: 2;
+  text-align: center;
+
+
+}
+footer{
+  position: relative;
+  top: -800px;
+  overflow: hidden;
+  height: 440px;
+
+  
+
+}
+footer img{
+  height: 440px;
+
+}
+footer h2{
+  position: absolute;
+  top:20px;
+  left: 650px;
+  font-size: 0.8rem;
+  font-family: lemon;
+  letter-spacing: 2px;
+  line-height: 2;
+  
+  
+}
+footer .ftr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  position: relative;
+  top: -40px;
+}
+.ftr .nutrii7{
+  position: relative;
+  top: -230px;
+  left: -120px;
+}
+.nutrii7 h1{
+  font-family: lemon;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  line-height: 3;
+}
+.nutrii7 p{
+  font-family: lemon;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  margin-top: 20px;
+}
+.nutrii7 a{
+  font-size: 2rem;
+  color: black;
+   margin-right: 20px;
+   line-height: 3; 
+}
+.quicklink{
+  position: relative;
+  top: -230px;
+  left: -50px;
+}
+.quicklink h1{
+  font-family: lemon;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  line-height: 3;
+}
+.quicklink ul li{
+  font-family: lemon;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  list-style-type: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.quicklink ul li:hover{
+  color: rgb(96, 134, 2);
+  transition-duration: 1s;
+}
+.ourservices{
+  position: relative;
+  top: -230px;
+  right: -40px;
+}
+.ourservices h1{
+  font-family: lemon;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  line-height: 3;
+}
+.ourservices ul li{
+  font-family: lemon;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  list-style-type: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.ourservices ul li:hover{
+  color: rgb(96, 134, 2);
+  transition-duration: 1s;
+}
+.contactus{
+  position: relative;
+  top: -230px;
+  right: -120px;
+  width:280px;
+
+}
+.contactus h1{
+  font-family: lemon;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  line-height: 3;
+  width: fit-content;
+}
+.contactus ul li{
+  
+  font-family: lemon;
+  font-size: 1.3rem;
+  width: fit-content;
+  letter-spacing: 2px;
+  line-height: 2;
+  list-style-type: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.copyri8{
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  height: 3px;
+  background-color:rgb(0, 0, 0);
+}
+
+
+
+

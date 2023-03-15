@@ -1,0 +1,658 @@
+@font-face {
+    font-family: lemon;
+    src: url(lemon.otf);
+}
+*{
+    margin: 0;
+    padding: 0;   
+}
+body{
+    background-color: rgb(0, 12, 19);
+    height: fit-content;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    background:url(gradient.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    position: relative;
+    right: -560px;
+    top: -80px;
+    display: flex;
+    width: fit-content;
+}
+.navbar ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-family: lemon;
+    font-size: 1rem;
+    color: black;
+    position: relative;
+}
+.navbar ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left:0;
+    right: 100%;
+    height: 3px;
+    background-color: black;
+  }
+  .navbar ul li a:hover::after{
+   left: 0;
+   right: 0;
+   transition:1s ;  
+  }
+.logo{
+    width:fit-content;
+    height:fit-content;
+}
+.logo img{
+    position: relative;
+    right: -80px;
+}
+.logo h1{
+    position: relative;
+    top: -60px;
+    right: -180px;
+    font-family: lemon;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: rgb(45, 45, 45);
+}
+.macro{
+    width: 100%;
+    height: 2800px;
+}
+.content1{
+    position: relative;
+    right: -70px;
+    top: 100px;
+}
+.content1 h1{
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: lemon;
+    letter-spacing: 2px;
+    line-height: 2;
+    text-align: left;
+    width: fit-content;
+}
+.content1 p{
+    font-size: 1.5rem;
+    color: rgba(240, 248, 255, 0.318);
+    font-family: lemon;
+    letter-spacing: 2px;
+    line-height: 2;
+    width: fit-content;
+}
+.cal{
+    position: relative;
+}
+.cal img{
+    position:absolute;
+    top: 100px;
+    margin-left: 450px;
+}
+.container{
+    position:relative;
+    top: 150px;
+    left: 340px;
+    width: 50vw;
+    height: 70vh;
+    padding:50px;
+    background: rgba(61, 61, 61, 0.162);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid  rgba(255, 255, 255, 0.644);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(2px); 
+}
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(77, 77, 77, 0.173);
+    pointer-events:none;
+    transform: skewX(-15deg);
+}
+.container h2{
+    font-size: 2rem;
+    font-family: lemon;
+    letter-spacing: 2px;
+    line-height: 2;
+    color: white;
+}
+.container .inputbox{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    color: white;
+    font-family: lemon;
+}
+.inputbox input:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(98, 97, 97);
+}
+.inputbox .text1 input{
+   position: relative;
+    left: 20px;
+    margin-top: 50px;
+    width: 30%;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid white;
+    line-height: 2;
+}
+.text1 span{
+    font-size: 1.5rem;
+    margin-left: 70px;
+}
+.inputbox .text2 input{
+  position: relative;
+  left: 25px;
+    margin-top: 50px;
+    width: 30%;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid white;
+    line-height: 2;
+}
+.text2 span{
+    position: relative;
+right: -20px;
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+.inputbox .text3 input{
+   position: relative;
+   left: 30px;
+    margin-top: 50px;
+    width: 30%;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid white;
+    line-height: 2;
+}
+.text3 span{
+    position: relative;
+right: -20px;
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+.inputbox .text4 input{
+    width: 30%;
+    height: 4vh;
+    background-color: transparent;
+    border: 2px solid white;
+    line-height: 2;
+}
+.text4 span{
+position: relative;
+right: -40px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+.text4 label{
+    position: relative;
+    left: -100px;
+    top: -5px;
+    font-size: 1.5rem;
+}
+.submit input{
+    position: absolute;
+    left: 160px;
+    width: 50%;
+    height:7vh ;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    font-family: lemon;
+}
+.submit input:hover{
+    background-color: grey;
+    color: rgb(251, 229, 139);
+}
+.content2{
+    position: relative;
+    bottom: -450px;  
+}
+.content2 img{
+    position: relative;
+    top: -110px;
+}
+.content2 #gradi{
+    position: relative;
+    top: -650px;
+    width: 52%;
+    height: 70vh;
+    z-index: -1;
+}
+.content2 h1{
+    width: fit-content;
+    position: relative;
+    top: -1160px;
+    left: 850px;
+    font-family: lemon;
+    font-size: 2rem;
+    color: white;
+    line-height: 2;
+}
+.content2 p{
+    position: absolute;
+    bottom: 810px;
+    right:10px;
+    font-size: 2rem;
+    font-family: lemon;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: grey;
+}
+.content3{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    order: 2;
+}
+.macross{
+    order: 1;
+}
+.carbs{
+    position: relative;
+    right: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.carbs .card{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    background: rgba(50, 50, 50, 0.773);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carbs .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.carbs .percent svg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: rotate(270deg);
+}
+.carbs .percent svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width:2;
+    stroke: #191919;
+    transform: translate(5px,5px);
+}
+.carbs .percent svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.dot{
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    transform:rotate(calc(3.6deg * var(--num))) ;
+    /*360deg/ 100 = 3.6 */
+    animation: animateDot 2s linear forwards;
+}
+@keyframes animateDot{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(calc(3.6deg * var(--num))); 
+}
+}
+.dot::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+    0 0 30px var(--clr);
+}
+.number{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.number h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    font-size: 2rem;
+    font-family: lemon;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.number h2 span{
+    font-weight: 300;
+    color: white;
+    font-size: 1rem;
+}
+.number p{
+    position: relative;
+    left: -10px;
+    font-weight: 300;
+    font-size: 0.75em;
+    line-height: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: -650px;  
+}
+.content3 img{
+    position: relative;
+    top: -160px;
+    right: -150px;
+    width: 700px;
+}
+.content3 #gradie{
+    position: relative;
+    top: -660px;
+    right: -120px;
+    width: 87%;
+    height: 65vh;
+    z-index: -1;
+}
+.content3 h1{
+    position: relative;
+    top: -190px;
+    right: -190px;
+    width: 130px;
+    font-family: lemon;
+    font-size: 2rem;
+    color: white;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+.content3 p{
+    position: absolute;
+    bottom: 830px;
+    right:10px;
+    font-size: 2rem;
+    font-family: lemon;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.output{
+    position: relative;
+    top: -500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.output img{
+    position:absolute;
+    height: 50vh;
+    right: -10px;
+}
+.output h1{
+    position: absolute;
+    left: 500px;
+    top: 120px;
+    font-family: lemon;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.output .glass{
+    position: relative;
+  top: 190px;
+  right: -10px;
+  width: 350px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0,0, 0.5);
+  border-radius: 5px;
+  background: rgba(2, 2, 2, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(12, 12, 12, 0.5);
+  border-left: 1px solid rgba(17, 17, 17, 0.4);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+  
+}
+.output .glass .carb{
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;  
+}
+.output .glass .carb h2{
+  position: absolute;
+  bottom: 350px;
+  left: 80px;
+  font-size: 2rem;
+  pointer-events: none;
+  letter-spacing: 3px;
+  line-height: 2;
+  color: rgb(60, 60, 60);
+  font-family: lemon;
+  z-index: 1;
+}
+.output .glass .carb p{
+    font-family: lemon;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+.output .glass .carb img{
+    position: relative;
+    width: 90%;
+    height: 30%;
+    top: -10px;
+}
+.output .glass .protein{
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;  
+}
+.output .glass .protein h2{
+  position: absolute;
+  bottom: 350px;
+  left: 80px;
+  font-size: 2rem;
+  pointer-events: none;
+  letter-spacing: 3px;
+  line-height: 2;
+  color: rgb(51, 51, 51);
+  font-family: lemon;
+  z-index: 1;
+}
+.output .glass .protein p{
+    font-family: lemon;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+.output .glass .protein img{
+    position: relative;
+    width: 60%;
+    height: 30%;
+}
+.output .glass .fat{
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s; 
+}
+.output .glass .fat h2{
+  position: absolute;
+  bottom: 350px;
+  left: 100px;
+  font-size: 2rem;
+  pointer-events: none;
+  letter-spacing: 3px;
+  line-height: 2;
+  color: rgb(56, 56, 56);
+  font-family: lemon;
+  z-index: 1;
+}
+.output .glass .fat p{
+    font-family: lemon;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+.output .glass .fat img{
+    position: relative;
+    width: 55%;
+    height: 10%;
+}
+footer{
+    position: relative;
+    bottom: -500px;
+}
+footer img{
+    height: 440px;
+}
+footer .ftr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+}
+.ftr .nutrii7{
+    position: relative;
+    top: -230px;
+    left: -120px;
+}
+.nutrii7 h1{
+    font-family: lemon;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    line-height: 3;
+}
+.nutrii7 p{
+    font-family: lemon;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-top: 20px;
+}
+.nutrii7 a{
+    font-size: 2rem;
+    color: black;
+     margin-right: 20px;
+     line-height: 3; 
+}
+.quicklink{
+    position: relative;
+    top: -230px;
+    left: -50px;
+}
+.quicklink h1{
+    font-family: lemon;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    line-height: 3;
+}
+.quicklink ul li{
+    font-family: lemon;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 2;
+    list-style-type: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.ourservices{
+    position: relative;
+    top: -230px;
+    right: -40px;
+}
+.ourservices h1{
+    font-family: lemon;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    line-height: 3;
+}
+.ourservices ul li{
+    font-family: lemon;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 2;
+    list-style-type: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.contactus{
+    position: relative;
+    top: -250px;
+    right: -120px;
+}
+.contactus h1{
+    font-family: lemon;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    line-height: 3;
+}
+.contactus ul li{
+    font-family: lemon;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 2;
+    list-style-type: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+

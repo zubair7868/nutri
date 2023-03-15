@@ -1,0 +1,1023 @@
+@font-face {
+    font-family: lemon;
+    src: url(lemon.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 20);
+}
+.micro{
+    width: 100%;
+    height: 3000px;
+}
+nav{
+    width: 100%;
+    overflow: hidden;
+    height: 10vh;
+    background:url(gradient.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    position: relative;
+    right: -560px;
+    top: -70px;
+    display: flex;
+}
+.navbar ul li {
+display: inline-block;
+margin-left: 25px;
+}
+.navbar ul li a{
+text-decoration: none;
+font-family: lemon;
+font-size: 1rem;
+color: black;
+position: relative;
+top: -20px;
+}
+.navbar ul li a::after{
+ content: '';
+ position: absolute;
+ bottom: -5px;
+ left:0;
+ right: 100%;
+ height: 2px;
+ background-color: black; 
+  }
+.navbar ul li a:hover::after{
+       left: 0;
+       right: 0;
+       transition:1s ;
+  }
+.logo{
+    width:fit-content;
+    height:fit-content;
+}
+.logo img{
+    position: relative;
+    right: -80px;
+}
+.logo h1{
+position: relative;
+top: -60px;
+right: -180px;
+font-family: lemon;
+font-size: 1.8rem;
+letter-spacing: 2px;
+color: rgb(45, 45, 45);
+}
+.content1{
+    position: relative;
+    right: -70px;
+    top: 100px;
+}
+.content1 h1{
+    font-size: 2rem;
+    font-family: lemon;
+    letter-spacing: 2px;
+    line-height: 3;
+    text-align: left;
+    color: aliceblue;
+}
+.content1 p{
+    font-size: 1.5rem;
+    color: rgba(240, 248, 255, 0.877);
+    font-family: lemon;
+    letter-spacing: 2px;
+    line-height: 2;
+    width: fit-content;
+}
+.banner-glass{
+    position: relative;
+}
+.banner-glass img{
+    position: relative;
+    bottom: -320px;
+    right: -500px;
+}
+.container{
+    position:relative;
+    top: -280px;
+    right: -18rem;
+    width: 60vw;
+    height: 70vh;
+    padding:50px;
+    border-radius: 20px;
+    border:2px solid white;
+    background: rgba(0, 0, 0, 0.26);
+  backdrop-filter: blur(2px);
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.5);
+    border-top-color: rgba(225,225,225,0.5);
+    border-left-color: rgba(225,225,225,0.5);
+    border-right-color: rgba(225,225,225,0.1);
+    border-bottom-color: rgba(225,225,225,0.1);  
+}
+.container h2{
+    font-size: 2rem;
+    font-family: lemon;
+    letter-spacing: 2px;
+    line-height: 2;
+    color: aliceblue;
+}
+.container .inputbox{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    color: black;
+    font-family: lemon;
+}
+.inputbox input:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(98, 97, 97);
+}
+.inputbox .text1 input{
+   position: relative;
+    left: 20px;
+    margin-top: 50px;
+    width: 30%;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid white;
+    line-height: 2;
+    color: aliceblue;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.text1 span{
+    font-size: 1.5rem;
+    margin-left: 70px;
+    color: aliceblue;
+    line-height: 4;
+}
+.inputbox .text2 input{
+   position: relative;
+   left: 25px;
+    margin-top: 50px;
+    width: 30%;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid white;
+    line-height: 2; 
+}
+.text2 span{
+    font-size: 1.5rem;
+    margin-left: 60px;
+    color: aliceblue;
+}
+.text2 label{
+    color: aliceblue;
+    font-family: lemon;
+    font-size: 1.5rem;
+}
+.submit input{
+    position: absolute;
+    left: 160px;
+    top: 350px;
+    width: 50%;
+    height:7vh ;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    font-family: lemon;
+}
+.submit input:hover{
+    background-color: grey;
+    color: rgb(251, 229, 139);
+}
+.content2{
+    width: 800px;
+    height: 80vh;
+  background-color: black;
+  position: relative;
+  bottom: 1600px;
+  left: 720px;
+}
+.content2 h1{
+    position: relative;
+    top: -1100px;
+    right: -40px;
+    font-family: lemon;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 3;
+    color: aliceblue;
+}
+.content2 p{
+position: relative;
+top: -1100px;
+right: -40px;
+    font-family: lemon;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 2.5;
+    color: rgba(240, 248, 255, 0.662);
+}
+.content2 .gradi1{
+    position: relative;
+    top: -30px;
+    left: -30px;
+    height: 80vh;
+    width: 830px;
+    z-index: -1;  
+}
+.content2 .gradi2{
+    position: relative;
+    top: -580px;
+    right: 0px;
+    width: 800px;
+    height: 80vh;
+    opacity: 0.2;
+}
+.content3{
+    width: 810px;
+    height: 80vh;
+  background-color: black;
+  position: relative;
+  bottom: 1500px;
+}
+.content3 h1{
+    position: relative;
+    top: -1100px;
+    right: -40px;
+    font-family: lemon;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 3;
+    color: aliceblue;
+}
+.content3 p{
+position: relative;
+top: -1100px;
+right: -40px;
+    font-family: lemon;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 2.5;
+    color: rgba(240, 248, 255, 0.662);
+}
+.content3 .gradi3{
+    position: relative;
+    top: -30px;
+    left: 2px;
+    height: 80vh;
+    width: 835px;
+    z-index: -1;  
+}
+.content3 .gradi4{
+    position: relative;
+    top: -580px;
+    left: 10px;
+    width: 800px;
+    height: 80vh;
+    opacity: 0.2;
+}
+.content4{
+    position: relative;
+    top: -1050px;  
+}
+.content4 img{
+    position: relative;
+    top: -180px;
+    width: 30%;
+    height: 20vh;
+}
+.content4 h1{
+    position: relative;
+    top: -500px;
+    font-family: lemon;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    color:aliceblue;
+}
+.minerals{
+    position: relative;
+    top: -200px;
+}
+.minerals h6{
+    position: relative;
+    top: -120px;
+    right: -140px;
+    font-family: lemon;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.mineral-micro{
+   
+    right: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.mineral-micro .card{
+    position: relative;
+    width: 160px;
+    height: 150px;
+    background: rgba(50, 50, 50, 0.773);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mineral-micro .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.mineral-micro .percent svg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: rotate(270deg);
+}
+.mineral-micro .percent svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width:2;
+    stroke: #191919;
+    transform: translate(5px,5px);
+}
+.mineral-micro .percent svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 1.5s;
+    opacity: 0;   
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.dot{
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    transform:rotate(calc(3.6deg * var(--num))) ;
+    /*360deg/ 100 = 3.6 */
+    animation: animateDot 2s linear forwards;
+}
+@keyframes animateDot{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(calc(3.6deg * var(--num)));
+       
+}
+}
+
+.dot::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+    0 0 30px var(--clr);
+ 
+}
+.number{
+    position: relative;
+    
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.number h2{
+   position: relative;
+   top: -330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    font-size: 1rem;
+    font-family: lemon;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.number h2 span{
+    font-weight: 300;
+    color: white;
+    font-size: 1rem;
+}
+.number p{
+    position: relative;
+    top: -320px;
+    left: 5px;
+    font-weight: 300;
+    font-size: 0.75em;
+    font-family: lemon;
+    line-height: 2px;
+    text-transform: uppercase;
+    color:rgb(255, 255, 191);
+    margin-bottom: -650px;
+    z-index: -1;
+    
+}
+.content5{
+    position: relative;
+    top: -1040px;
+}
+.content5 img{
+    position: relative;
+    top: -120px;
+    float: right;
+    width: 30%;
+    height: 20vh;
+}
+.content5 h6{
+    position: relative;
+    top: -70px;
+    right: -1200px;
+    font-size: 2rem;
+    font-family: lemon;
+}
+.vitamins{
+    position: relative;
+    top: 500px;
+}
+.vita{
+    position: relative;
+ 
+    top: -400px;
+    right: -220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+.vita .card{
+    position: relative;
+    width: 180px;
+    height: 150px;
+    background: rgba(50, 50, 50, 0.773);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vita .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.vita .percent svg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: rotate(270deg); 
+}
+.vita .percent svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width:2;
+    stroke: #191919;
+    transform: translate(5px,5px);
+}
+.vita .percent svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+   
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.dot{
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    transform:rotate(calc(3.6deg * var(--num))) ;
+    /*360deg/ 100 = 3.6 */
+    animation: animateDot 2s linear forwards;
+   
+}
+@keyframes animateDot{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(calc(3.6deg * var(--num)));
+       
+}
+}
+.dot::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+    0 0 30px var(--clr);
+}
+.number{
+    position: relative;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.number h2{
+    position: relative;
+    top: -420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    font-size: 2rem;
+    font-family: lemon;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.number h2 span{
+    font-weight: 300;
+    color: white;
+    font-size: 1rem;
+}
+.number p{
+    position: relative;
+    top: -400px;
+    left: -5px;
+    font-weight: 300;
+    font-size: 0.75em;
+    line-height: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: -650px;
+}
+.vita2{
+    position: relative;
+    top: -400px;
+    right:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.vita2 .card{
+    position: relative;
+    bottom: -100px;
+    width: 160px;
+    height: 150px;
+    background: rgba(50, 50, 50, 0.773);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vita2 .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.vita2 .percent svg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: rotate(270deg);
+}
+.vita2 .percent svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width:2;
+    stroke: #191919;
+    transform: translate(5px,5px);
+}
+.vita2 .percent svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.dot{
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    transform:rotate(calc(3.6deg * var(--num))) ;
+    /*360deg/ 100 = 3.6 */
+    animation: animateDot 2s linear forwards;
+   
+}
+@keyframes animateDot{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(calc(3.6deg * var(--num)));
+       
+}
+}
+.dot::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+    0 0 30px var(--clr);
+}
+.number{
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.number h2{
+    position: relative;
+    top: -420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    font-size: 2rem;
+    font-family: lemon;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.number h2 span{
+    font-weight: 300;
+    color: white;
+    font-size: 1rem;
+}
+.number p{
+    position: relative;
+    top: -400px;
+    left: -5px;
+    font-weight: 300;
+    font-size: 0.75em;
+    line-height: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: -650px;
+}
+.content6{
+    position: relative;
+    top: -700px;
+}
+.content6 h1{
+    font-size: 2rem;
+    font-family: lemon;
+    color: aliceblue;
+    letter-spacing: 2px;
+    line-height: 2;
+    text-align: center;
+}
+.content6 .vit-a{
+    position: relative;
+    bottom: -150px;
+    background-color: rgb(0, 0, 0);
+    width: 40%;
+    height: 80vh;
+}
+#vit-a2{
+  position: relative;
+  top: -580px;
+    width: 610px;
+    height: 80vh;
+    opacity: 0.2;
+}
+.vit-a .vit-a-grad1{
+    position: relative;
+    top: -30px;
+    width: 640px;
+    height: 80vh;
+    z-index: -1;
+}
+.vit-a h6{
+    position: relative;
+    top: -1100px;
+    right: -60px;
+    color: white;
+    font-family: lemon;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.vit-a .carrot{
+    position: relative;
+    bottom: 900px;
+    right: -300px;
+    width: 200px;
+}
+.vit-a p{
+    position: relative;
+    top: -1250px;
+    right: -60px;
+    color: white;
+    font-family: lemon;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.vit-a ul li{
+    position: relative;
+    top: -1200px;
+    right: -80px;
+    color: white;
+    font-family: lemon;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.vit-b6{
+    position: relative;
+    bottom: -140px;
+    right: -920px;
+    background-color: black;
+    width: 40%;
+    height: 80vh;
+}
+.vit-b6 .vit-b{
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+    width: 640px;
+    height: 80vh;
+    z-index: -1;
+}
+.vit-b6 .berri{
+    position: relative;
+    top: -580px;
+    width: 600px;
+    height: 80vh;
+    opacity: 0.3;
+}
+.vit-b6 h6{
+    position: relative;
+    top: -1100px;
+    right: -60px;
+    color: white;
+    font-family: lemon;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.vit-b6 .fish{
+    position: relative;
+    bottom: 850px;
+    right: -300px;
+    width: 200px;
+}
+.vit-b6 p{
+    position: relative;
+    top: -1180px;
+    right: -60px;
+    color: rgba(255, 255, 255, 0.834);
+    font-family: lemon;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.vit-b6 ul li{
+    position: relative;
+    top: -1150px;
+    right: -80px;
+    color: rgba(255, 255, 255, 0.793);
+    font-family: lemon;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.vit-b12{
+    position: relative;
+    bottom: -100px;
+    right: 0px;
+    background-color: black;
+    width: 41%;
+    height: 80vh;
+}
+.vit-b12 .vit-bb{
+    position: relative;
+    bottom: 30px;
+    right: 0px;
+    width: 660px;
+    height: 80vh;
+    z-index: -1;
+}
+.vit-b12 .beef{
+    position: relative;
+    top: -580px;
+    right: 0px;
+    width: 625px;
+    height: 80vh;
+    opacity: 0.3;
+}
+.vit-b12 h6{
+    position: relative;
+    top: -1100px;
+    right: -60px;
+    color: white;
+    font-family: lemon;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.vit-b12 .steak{
+    position: relative;
+    bottom: 799px;
+    right: -300px;
+    width: 200px;
+}
+.vit-b12 p{
+    position: relative;
+    top: -1180px;
+    right: -50px;
+    color: rgba(255, 255, 255, 0.834);
+    font-family: lemon;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.vit-b12 ul li{
+    position: relative;
+    top: -1150px;
+    right: -80px;
+    color: rgba(255, 255, 255, 0.793);
+    font-family: lemon;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.vit-c{
+    position: relative;
+    bottom: -140px;
+    right: -920px;
+    background-color: black;
+    width: 40%;
+    height: 80vh;
+}
+.vit-c .vita-c{
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+    width: 640px;
+    height: 80vh;
+    z-index: -1;
+}
+.vit-c .lemon{
+    position: relative;
+    top: -580px;
+    width: 600px;
+    height: 80vh;
+    opacity: 0.3;
+}
+.vit-c h6{
+    position: relative;
+    top: -1100px;
+    right: -60px;
+    color: white;
+    font-family: lemon;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.vit-c .bellpepper{
+    position: relative;
+    bottom: 850px;
+    right: -320px;
+    width: 100px;
+    opacity: 0.8;
+}
+.vit-c p{
+    position: relative;
+    top: -1180px;
+    right: -60px;
+    color: rgba(255, 255, 255, 0.834);
+    font-family: lemon;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.vit-c ul li{
+    position: relative;
+    top: -1150px;
+    right: -80px;
+    color: rgba(255, 255, 255, 0.793);
+    font-family: lemon;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.vit-d{
+    position: relative;
+    bottom: -100px;
+    right: 0px;
+    background-color: black;
+    width: 41%;
+    height: 80vh;
+}
+.vit-d .vit-dd{
+    position: relative;
+    bottom: 30px;
+    right: 0px;
+    width: 660px;
+    height: 80vh;
+    z-index: -1;
+}
+.vit-d .sun{
+    position: relative;
+    top: -580px;
+    right: 0px;
+    width: 625px;
+    height: 80vh;
+    opacity: 0.3;
+}
+.vit-d h6{
+    position: relative;
+    top: -1100px;
+    right: -60px;
+    color: white;
+    font-family: lemon;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.vit-d .egg{
+    position: relative;
+    bottom: 880px;
+    right: -350px;
+    width: 180px;
+}
+.vit-d p{
+    position: relative;
+    top: -1250px;
+    right: -70px;
+    color: rgba(255, 255, 255, 0.834);
+    font-family: lemon;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.vit-d ul li{
+    position: relative;
+    top: -1210px;
+    right: -80px;
+    color: rgba(255, 255, 255, 0.793);
+    font-family: lemon;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>water calculator</title>
+ <link rel="stylesheet" href="water.css">
+ 
+</head>
+<body>
+<!--navigation-->   
+<nav>
+<div class="logo"data-aos="fade-in">
+ <img src="mask.png" width="69px">
+ <h1>NUTRI7</h1>
+</div>
+<div class="navbar"data-aos="fade-in">
+ <ul>
+ <li><a href="index.html" target="_blank">Home</a></li>
+ <li><a href="#">DIET plan</a></li>
+ <li><a href="macro.html"target="_top">calculator</a></li>
+ <li><a href="#"target="_top">About us</a></li>
+ </ul>
+</div>
+</nav>
+<!--water-calculator-->
+<section>
+<div class="class">
+ <h1>| Water Intake Calculator</h1>
+ <p>Use this hydration calculator to easily calculate<br>
+   your recommended daily water intake you need<br> to
+   keep yourself healthy and at peak physical<br>
+   and mental performance.</p><br>
+<div class="image"> <img src="water.png" width="600px">
+<div class="container">
+ <h2>| CALCULATE YOUR WATER INTAKE</h2>
+<div class="cardss">  
+<div class="col">
+<div class="inputbox">
+ <input id=weigh type="number" required="required">
+ <span class="number">weight</span>
+ <span class="line"></span>
+</div>
+</div>
+<div class="col" onclick="cal()">
+ <input type="submit" value="Calculate">
+</div>
+ <input type="text" id="output" readonly>
+</div>     
+</div>
+</div>
+</div>
+</section>
+<!--about-water-->
+<div class="content2">
+ <img class="gradi1" src="gradient.jpg">
+ <img class="gradi2" src="wtr-3.jpg" >
+ <h1>| About Water</h1>
+ <p>Its chemical formula, H2O,
+   indicates that each of its molecules
+   contains one oxygen and two hydrogen
+   atoms,connected by covalent bonds.
+   The hydrogen atoms are attached to the
+   oxygen atom at an angle of 104.45°.
+   "Water" is also the name of the liquid
+   state of H2O standard temperature and pressure.</p>
+</div>
+<!--y-water is imprtnt-->
+<div class="content3">
+ <img class="gradi1" src="gradient.jpg">
+ <img class="gradi2" src="wtr-4.jpg">
+ <h1>| water is important to life</h1>
+ <p>Water's extensive capability to dissolve
+   a variety of molecules has earned it the
+   designation of “universal solvent,” and it
+   is this ability that makes water such an invaluable
+   life-sustaining force. On a biological level, water's
+   role as a solvent helps cells transport and use substances
+   like oxygen or nutrients</p>
+</div>
+<footer>
+   <img src="ftr.jpg" width="100%">
+  <div class="ftr">
+  <div class="nutrii7">
+   <h1>| NUTRI7</h1>
+   <p>it helps design<br>
+      your lifestyle</p>
+  <div class="sociall">
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+  </div>
+  </div>
+  <div class="quicklink">
+   <h1>| Quicklink</h1>
+   <ul>
+    <li>> About us</li>
+    <li>> Classes</li>
+    <li>> Our history</li>
+    <li>> FAQ</li>
+   </ul>
+  </div>
+  <div class="ourservices">
+   <h1>| our services</h1>
+   <ul>
+    <li> > Personalized nutrition</li>
+    <li> > Balance Body & Mind</li>
+    <li> > Fitness performance</li>
+    <li> > Weight loss programme</li>
+   </ul>
+  </div>
+  <div class="contactus">
+   <h1>| contact us</h1>
+   <ul>
+    <li> the trplicane,chennai</li>
+    <li> 967846750</li>
+    <li> info@madboy.com</li>
+   </ul>
+  </div>
+  </div>
+  <div class="copyri8">
+  <h2>|Developed by !MADBOY</h2>
+  </div>
+  </footer>
+<!--js-of-calculator-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script>
+let wtr=document.getElementById("weigh");
+let output=document.getElementById("output");
+function cal(){
+if(weigh.value<=20)
+{
+    output.value="drink 1 litres of water a day";
+}
+else if(weigh.value>=21 && weigh.value<=25){
+    output.value="drink 1.3 litres a day";
+}
+else if(weigh.value>=26 && weigh.value<=30){
+    output.value="drink 1.5 litres a day";
+}
+else if(weigh.value>=31 && weigh.value<=35){
+    output.value="drink 1.7 litres a day";
+}else if(weigh.value>=36 && weigh.value<=40){
+    output.value="drink 2 litres a day";
+}
+else if(weigh.value>=41 && weigh.value<=45){
+   output.value="drink 2.3 litres a day";
+}
+else if(weigh.value>=45 && weigh.value<=50){
+   output.value="drink 2.5 litres a day";
+}
+else if(weigh.value>=51 && weigh.value<=55){
+   output.value="drink 2.7 litres a day";
+}
+else if(weigh.value>=56 && weigh.value<=60){
+   output.value="drink 3 litres a day";
+}
+else if(weigh.value>=61 && weigh.value<=65){
+   output.value="drink 3.3 litres a day";
+}
+else if(weigh.value>=66 && weigh.value<=70){
+   output.value="drink 3.5 litres a day";
+}
+else if(weigh.value>=71 && weigh.value<=75){
+   output.value="drink 3.7 litres a day";
+}
+else if(weigh.value>=76 && weigh.value<=80){
+   output.value="drink 4 litres a day";
+}
+else if(weigh.value>=81 && weigh.value<=85){
+   output.value="drink 4.3 litres a day";
+}
+else if(weigh.value>=86 && weigh.value<=90){
+   output.value="drink 4.5 litres a day";
+}
+else if(weigh.value>=91 && weigh.value<=95){
+   output.value="drink 4.7 litres a day";
+}
+else if(weigh.value>=96 && weigh.value<=100){
+   output.value="drink 5 litres a day";
+}
+else if(weigh.value>=101 && weigh.value<=105){
+   output.value="drink 5.3 litres a day";
+}
+}
+
+gsap.from(".class",{
+            opacity:0,
+            duration:4,
+            scrollTrigger: {
+                trigger:".class",
+                start:"top 25%",
+                end:"top 10%",  
+                 scrub:true,
+                 
+                 
+            }
+        })
+
+ gsap.to(".cards",{
+                opacity:1,
+                duration:7,
+                scrollTrigger:{
+                    trigger:".class",
+                    start:"top 20%",
+                end:"top "
+                
+                }
+
+            });
+            gsap.timeline({
+            scrollTrigger: {
+                trigger: ".class",
+                start: "top 20%",
+                end: "top ",
+                scrub: true              
+            }
+        })
+          .from(".container", { y: innerHeight * 1 })
+
+          gsap.registerPlugin(ScrollTrigger);
+gsap.from(".content2", {
+    x: 1400,
+    scrollTrigger: {
+        trigger:".content2",
+        start:"top 40%",
+        end:"top 20%",
+        scrub:true,
+      
+        
+    }
+});
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.from(".gradi2", {
+    x: -800,
+    opacity:0,
+    scrollTrigger: {
+        trigger:".gradi2",
+        start:"top 40%",
+        end:"top 20%",
+        scrub:true,
+        
+        
+    }
+});
+gsap.registerPlugin(ScrollTrigger);
+gsap.from(".content3", {
+    x: -1400,
+    scrollTrigger: {
+        trigger:".content3",
+        start:"top 40%",
+        end:"top 20%",
+        scrub:true,
+        
+        
+    }
+});
+gsap.registerPlugin(ScrollTrigger);
+gsap.from("footer", {
+    y: 400,
+    scrollTrigger: {
+        trigger:"footer",
+        start:"top 70%",
+        end:"top 40%",
+        scrub:true,
+    
+        
+    }
+});
+
+
+
+
+
+
+
+
+
+        
+
+
+
+</script>
+</body>
+</html>

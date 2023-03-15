@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="nutri.css">
+  <script src="indx.js"></script>
+  <title>NUTRI7</title>
+</head>
+<body>
+  <!--pre-loader-->
+  <div class="loader" id="loading">
+    <div class="animate">
+  <svg id="pre-loader"
+   width="346" height="84" viewBox="0 0 346 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M52.1094 4.25V53.5156L3.875 3.125H3.26562V80.0938H15.125V30.8281L63.4531 81.3125H64.0156V4.25H52.1094Z" 
+    stroke="black" 
+    stroke-width="5"/>
+    <path d="M106.391 81.4062C122.469 81.4062 134.984 68.7031 134.984 51.3594V4.4375H123.031V51.3125C123.031 61.7656 115.578 69.4062 106.344 69.4062C97.1094 69.4062 89.75 61.7656 89.75 51.3125V4.4375H77.8438V51.3594C77.8438 68.7031 90.3125 81.4062 106.391 81.4062Z"
+     stroke="black"
+      stroke-width="5"/>
+    <path d="M196.109 4.4375H143.703V16.2031H163.953V80H175.859V16.2031H196.109V4.4375Z"
+     stroke="black"
+      stroke-width="5"/>
+    <path d="M261.688 80L239.703 49.7656C248.375 46.9531 254.656 38.4688 254.656 28.7188C254.656 15.2656 243.125 4.4375 229.062 4.4375H205.578L205.625 80H217.484V50.75H226.766L247.109 80H261.688ZM217.438 40.9062V16.2031H229.344C236.375 16.2031 242.422 21.4062 242.422 28.4375C242.422 35.1875 236.469 40.9531 229.344 40.9062H217.438Z" 
+    stroke="black"
+     stroke-width="5"/>
+    <path d="M269.703 80H281.562V4.4375H269.703V80Z"
+     stroke="black"
+      stroke-width="5"/>
+    <path d="M291.078 4.4375V16.0156H325.906L299.984 80H312.453L342.734 6.64062V4.4375H291.078Z"
+     stroke="black"
+      stroke-width="5"/>
+    </svg>
+  </div>
+</div>
+<!--banner-->    
+<div class="banner">
+<div class="header">
+<!--navigation-->    
+<div class="navbar">
+ <img src="mask.png" width="60px" class="logo">
+ <h1 class="logoo">NUTRI<span>7</span></h1>
+</div>
+ <nav>
+ <ul>
+ <li><a href="#">Home</a></li>
+ <li><a href="#calculator">Calculator</a></li>
+ <li><a href="#diet-plan">Diet Plan</a></li>
+ <li><a href="#">Contact Us</a></li>
+ </ul>
+ </nav>
+</div>
+<!--social-link-->
+<div class="content">
+<div class="social">
+ <a href="#"><i class="fa-brands fa-instagram"></i></a>
+ <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+ <a href="#"><i class="fa-regular fa-envelope"></i></a>
+</div>
+<!--content1-->
+<div class="cont1">
+ <h6>We Designed NUTRI<span>7</span> so,<br>
+    you can easily calculate<br>
+    And Design Your Lifestyle.</h6>
+ <button class="btn1">Diet Plan </button>
+ <button class="btn">Calculator</button>
+</div>
+<div class="bnr">
+ <img src="salad.png" width="350px">
+</div>
+</div>
+</div>
+<!--content2-->
+<div id="calculator" class="card">
+ <img src="img1.jpg" width="50%" >
+<div class="text1">
+ <p>scale your food design your lifestyle.</p>
+ <button>Calculate</button>
+</div>
+</div>
+<div  class="cardss">
+<div class="glass">
+<div class="macro">
+ <p>MACRO<br>
+   CALCULATOR</p>
+ <img src="macro.png" width="190px">
+ <a href="macro.html">Calculate</a>
+</div>
+</div>
+<div class="glass">
+<div class="water">
+ <p>WATER<br>
+   CALCULATOR</p>
+ <img src="water.png" width="190px">
+ <a href="water.html">Calculate</a>
+</div>
+</div>
+<div class="glass">
+<div class="micro">
+ <p>MICRO<br>
+   CALCULATOR</p>
+ <img src="miccro.png" width="170px">
+ <a href="micro.html">Calculate</a>
+</div>
+</div>
+<div class="services">
+ <img class="ser-1" src="food.jpg" width="50%">
+ <img src="ntri.png" width="40%">
+</div>
+<div class="about">
+ <img src="gradient.jpg" width="100%">
+ <h1>| About Nutrition</h1>
+<div class="aboutglass">
+<div class="aboutnutri">
+ <h2 id="split">| improve by inspirehealthyliving</h2>
+ <P>Nutrition is the study of nutrients in food,
+   how the body uses them,and the relationship between
+   diet, health,and disease. Nutritionists use ideas from
+   molecular biology, biochemistry, and genetics to</P>
+<div class="blackglass">
+ <img  src="blackglass.png">
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--content3-->
+<div class="diet">
+ <h6>|skills</h6>
+ <img class="img1" src="gradient.jpg" width="55%">
+ <img class="img2" src="nutri2.jpg" width="55%">
+<div class="content2">
+ <h1>| Nutrition Skills</h1>
+<div class="macross" >
+<div class="carbs">
+<div class="progress">
+<div class="percent" style="--clr:#fbde5f;--num:85;">
+<div class="dot"></div>
+ <svg>
+ <circle cx="70" cy="70" r="70"></circle>
+ <circle cx="70" cy="70" r="70"></circle>
+ </svg>
+<div class="skillrate">
+ <h2>85<Span>%</Span></h2>
+</div>
+<h2 id="skills">Nutrition Strategies</h2>
+</div>
+</div>
+<div class="progress">
+<div class="percent" style="--clr:hsl(49, 73%, 78%);--num:55;">
+<div class="dot"></div>
+ <svg>
+ <circle cx="70" cy="70" r="70"></circle>
+ <circle cx="70" cy="70" r="70"></circle>
+ </svg>
+<div class="skillrate">
+ <h2>55<Span>%</Span></h2>
+</div>
+<h2 id="skills">Nutritional Motivation</h2>
+</div>
+</div>
+<div class="progress">
+<div class="percent" style="--clr:#ebfa86;--num:65;">
+<div class="dot"></div>
+ <svg>
+ <circle cx="70" cy="70" r="70"></circle>
+ <circle cx="70" cy="70" r="70"></circle>
+ </svg>
+<div class="skillrate">
+ <h2>65<Span>%</Span></h2>
+</div>
+<h2 id="skills">Weight loss Program</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--content4-->
+<div class="offers">
+  <h2>|programme</h2>
+<div class="content3">
+ <img class="offer1" src="gradient.jpg" width="70%">
+ <img class="offer2" src="nutri3.jpg" width="60%">
+</div>
+<div class="offercard">
+<div class="activity">
+<div class="fitness">
+ <p>Fitness<br>
+   performance</p>
+ <img src="physical.png" width="190px">
+ <a href="#">Calculate</a>
+</div>
+</div>
+<div class="activity">
+<div class="plan">
+ <p>Weight loss<br>
+   programme</p>
+ <img src="weightloss.png" width="190px">
+ <a href="water.html">Calculate</a>
+</div>
+</div>
+<div class="activity">
+<div class="meal">
+ <p>personal<br>
+   coaching</p>
+ <img src="personal.png" width="170px">
+ <a href="#">Calculate</a>
+</div>
+</div>
+</div>
+<div class="content4">
+ <img src="ftr.jpg" width="60%">
+ <h6>| HEALTHY FOOD, FOR BREAKFAST</h6>
+ <h1 id="split">| We Advise You To Prevent<br>
+      Disease Nutrition</h1>
+ <p>It is a long established fact that<br>
+   a reader will be distracted by the<br>
+   readable that a reader will be distracted<br>
+   by the readable.</p>
+</div>
+</div>
+<div class="cntnri8">
+ <img class="brkfst1" src="brkfst1.jpg" >
+ <img class="brkfst2" src="brkfst4.jpg" >
+</div>
+<!--content5-->
+<div id="diet-plan" class="content5">
+ <h1> | DIET PLAN</h1>
+ <img id=g src="gradient.jpg" >
+ <img id="m" src="meal.jpg" width="30%">
+ <div class="glasses">
+<div class="glass5">
+<div class="keto-diet">
+  <p>KETO DIET</p>
+ <img src="paleo.png">
+ <a href="#">click</a>
+</div>
+</div>
+<div class="glass5">
+<div class="paleo-diet">
+ <p>paleo diet</p>
+ <img src="diet.png">
+ <a href="#">click</a>
+</div>
+</div>
+<div class="glass5">
+<div class="mediterran-diet">
+ <p>mediterean diet</p>
+ <img src="medi.png">
+ <a href="#">click</a>
+</div>
+</div>
+<div class="glass5">
+<div class="vegan-diet">
+ <p>vegan diet</p>
+ <img src="vegann.png">
+ <a href="#">click</a>
+</div>
+</div>
+</div>
+</div>
+<!--partnership-->
+<div class="partner">
+  <h2>|Partnership</h2>
+<img src="gradient.jpg" width="100%">
+<div class="prtnr">
+  <img src="prtnr-3.png">
+  <img src="prtnr-2.png">
+  <img src="logo5.png">
+  <img src="logo6.png">
+  <img src="logo7.png">
+  <img src="prtnr-3.png">
+ 
+
+
+</div>
+</div>
+<!--login form-->
+<div class="login-bdy">
+  <h2>|Appointment</h2>
+<div class="form">
+  <img src="loginp.jpg" >
+  <h2>| What does a nutritionists do ?</h2>
+  <p>Dietitians and nutritionists counsel<br>
+     clients on nutrition issues and<br> healthy
+     eating habits. Dietitians<br>
+     and nutritionists
+     are experts in<br> the use of food and nutrition<br>
+     to promote health and manage disease. </p>
+  <div class="login">
+      <h3>login</h3>
+      <h4>Enter Your Credentials</h4>
+   
+<form class="login-form">
+          <input type="text" placeholder="username">
+          <input type="password" type="number" placeholder="passcode">
+          <a href="#">forgot your passcode?</a>
+          <button>Login</button>
+</form>
+</div>
+</div>
+</div>
+<div class="testimonial">
+  <h2>|Testimonial</h2>
+  <img src="ftr.jpg" width="600px">
+  <div class="feedback">
+  <q>diet advised is very healthy
+    and easy to follow.their expert 
+    knowledge with their friendly nature </q>
+       <p> -Sarah</p>
+  </div>
+</div>
+<footer>
+  <img src="ftr.jpg" width="100%">
+ <div class="ftr">
+ <div class="nutrii7">
+  <h1>| NUTRI7</h1>
+  <p>it helps design<br>
+     your lifestyle</p>
+ <div class="sociall">
+   <a href="#"><i class="fa-brands fa-instagram"></i></a>
+   <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+   <a href="#"><i class="fa-regular fa-envelope"></i></a>
+ </div>
+ </div>
+ <div class="quicklink">
+  <h1>| Quicklink</h1>
+  <ul>
+   <li>> About us</li>
+   <li>> Classes</li>
+   <li>> Our history</li>
+   <li>> FAQ</li>
+  </ul>
+ </div>
+ <div class="ourservices">
+  <h1>| our services</h1>
+  <ul>
+   <li> > Personalized nutrition</li>
+   <li> > Balance Body & Mind</li>
+   <li> > Fitness performance</li>
+   <li> > Weight loss programme</li>
+  </ul>
+ </div>
+ <div class="contactus">
+  <h1>| contact us</h1>
+  <ul>
+   <li> the trplicane,chennai</li>
+   <li> 967846750</li>
+   <li> info@madboy.com</li>
+  </ul>
+ </div>
+ </div>
+ <div class="copyri8">
+ <h2>|Developed by !MADBOY</h2>
+ <img src="madboy.png" width="20px">
+ </div>
+ </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script>
+  document.body.onload=()=>
+  {
+setTimeout(function ()
+      {
+let pre=document.querySelector("loading");
+
+loading.classList.add("change");
+      },5000)
+      let pre=document.querySelectorAll("#pre-loader");
+for(let i=0; i<pre-loader.length; i++){
+        console.log(`letter ${i} is ${logo[i].getTotalLength()}`);
+      }  
+  }
+
+  let diet= document.querySelector(".btn")
+  diet.addEventListener("click",()=>{
+    location.href="water.html";
+  })
+
+
+
+
+
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.from(".offers", {
+    x: 1200,
+    scrollTrigger: {
+        trigger:".diet",
+        start:"top 90%",
+        end:"top",
+        scrub:true,
+      
+      
+    }
+});
+gsap.to(".offercard",{
+                
+                scrollTrigger:{
+                    trigger:".content2",
+                    start:"bottom",
+                end:"top"
+                }
+
+            })
+gsap.timeline({
+            scrollTrigger: {
+                trigger: ".content2",
+                start: "top 60%",
+                end: "top 30%",
+                scrub: true,
+              
+            }
+        })
+          .from(".activity", { y: innerHeight * -0.5 })
+        
+
+
+
+
+
+
+gsap.from(".card",{
+            scale:0,
+            duration:4,
+            scrollTrigger: {
+                trigger:".banner",
+                start:"top 80%",
+                end:"center 70%",  
+                 scrub:true
+            }
+        })
+
+ gsap.to(".services",{
+                scale:1,
+                duration:7,
+                scrollTrigger:{
+                    trigger:".cont1",
+                    start:"top top",
+                end:"top"
+                }
+
+            })
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".content",
+                start: "top center",
+                end: "top",
+                scrub: true
+            }
+        })
+          .from(".glass", { y: innerHeight * 1 })
+
+
+
+          gsap.from(".about",{
+            opacity:0,
+            scrollTrigger: {
+                trigger:".card",
+                start:"top 30%",
+                end:"top 20%",  
+                 scrub:true
+                 
+            }
+        })
+
+ 
+
+            gsap.registerPlugin(ScrollTrigger);
+gsap.from(".diet", {
+    x: -1200,
+    scrollTrigger: {
+        trigger:"#split",
+        start:"top 30%",
+        end:"center 20%",
+        scrub:true,
+        
+    }
+});
+        
+          gsap.registerPlugin(ScrollTrigger);
+gsap.from(".content4", {
+    x: -1200,
+    scrollTrigger: {
+        trigger:".activity",
+        start:"top 90%",
+        end:"bottom 40%",
+        scrub:true,
+        
+    }
+});
+gsap.registerPlugin(ScrollTrigger);
+gsap.from(".cntnri8", {
+    x: 1200,
+    scrollTrigger: {
+        trigger:".activity",
+        start:"top 90%",
+        end:"top",
+        scrub:true,
+        
+    }
+});
+
+
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.from(".content5", {
+    x: 1200,
+    scrollTrigger: {
+        trigger:".brkfst1",
+        start:"top 70%",
+        end:"top 40%",
+        scrub:true,
+      
+        
+      
+      
+    }
+});
+gsap.to(".glasses",{
+                
+                scrollTrigger:{
+                    trigger:".glasses",
+                    start:"top 80%",
+                end:"top 40% "
+                }
+
+            })
+gsap.timeline({
+  
+            scrollTrigger: {
+                trigger: ".brkfst1",
+                start: "top 70%",
+                end: "top 40%",
+                scrub: true,
+                
+              
+            }
+        })
+          .from(".glass5", { y: innerHeight * 2 })
+
+
+
+          gsap.from(".partner",{
+            scale:0,
+            duration:4,
+            scrollTrigger: {
+                trigger:".glasses",
+                start:"top 60%",
+                end:"top 40%",  
+                 scrub:true,
+                 
+            }
+        })
+
+ gsap.to(".prtnr",{
+                scale:1,
+                duration:2,
+                scrollTrigger:{
+                    trigger:".partner",
+                    start:"top 60%",
+                end:"top 30%",
+                
+                }
+
+            });
+
+            gsap.from(".login-bdy",{
+            opacity:0,
+            scrollTrigger: {
+                trigger:".partner",
+                start:"top 80%",
+                end:"center 40%",  
+                 scrub:true
+                 
+            }
+        })
+
+            gsap.from(".testimonial",{
+            opacity:0,
+            duration:4,
+            scrollTrigger: {
+                trigger:".login-bdy",
+                start:"top 60%",
+                end:"top 40%",  
+                 scrub:true
+                 
+            }
+        })
+
+ gsap.to(".feedback",{
+                opacity:1,
+                duration:7,
+                scrollTrigger:{
+                    trigger:".login-form",
+                    start:"top 60%",
+                end:"top 30%",
+                
+                }
+
+            });
+            gsap.registerPlugin(ScrollTrigger);
+gsap.from("footer", {
+    y: 300,
+    scrollTrigger: {
+        trigger:".login-form",
+        start:"top 30%",
+        end:"top 20%",
+        scrub:true
+        
+    }
+});
+
+
+
+
+</script>
+
+      
+      
+</body>
+</html>
